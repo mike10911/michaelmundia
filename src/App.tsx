@@ -1,9 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { StyledAppContainer } from "./App.styles";
+import NavBar from "./components/nav-bar/NavBar";
 
 function App() {
   return (
-    <div/>
+    <StyledAppContainer>
+      <NavBar/>
+    </StyledAppContainer>
   );
 }
 
