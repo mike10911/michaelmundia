@@ -12,10 +12,14 @@ const H1 = styled(motion.h1)`
   color: ${(props): string => (props.color ? props.color : colors.DARK_GREEN)};
   font-size: 64px;
   margin: 0;
+  font-weight: 300;
 `;
 
 const H2 = styled.h2`
   font-family: ${fonts.questrial};
+  font-size: 32px;
+  font-weight: 300;
+  color: ${(props): string => (props.color ? props.color : colors.DARK_GREEN)};
 `;
 
 const H3 = styled.h3`

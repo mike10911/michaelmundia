@@ -36,15 +36,9 @@ const NavBar: React.FC = () => {
         <StyledNavBarItem>
           <StyledNavLink href="#">RESUME</StyledNavLink>
         </StyledNavBarItem>
-        <StyledNavBarItem2
-          whileHover="hover"
-          whileTap="tap"
-          variants={buttonAnimations}
-        >
-          <StyledLink color={colors.WHITE} href="#">
-            CONTACT
-          </StyledLink>
-        </StyledNavBarItem2>
+        <StyledNavBarItem>
+        <StyledNavLink href="#">CONTACT</StyledNavLink>
+        </StyledNavBarItem>
       </StyledNavBarList>
     </StyledNavBarContainer>
   );

@@ -10,8 +10,8 @@ const StyledNavBarContainer = styled(motion.div)`
     padding: rem;
     margin-top: 2rem;
     background-color: white;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 60px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05); 
 `
@@ -19,7 +19,7 @@ const StyledNavBarList = styled.ul`
     display: flex;
     list-style: none;
     gap: 5rem;
-    padding-left: 3rem;
+
 `
 const StyledNavBarItem = styled.li`
     text-decoration: none;
