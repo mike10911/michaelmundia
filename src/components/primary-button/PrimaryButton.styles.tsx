@@ -20,8 +20,7 @@ const StyledPrimaryButton = styled(motion.button)`
   padding-left: 2.5em;
   padding-right: 2.5em;
   padding-top: 0.7em;
-  padding-bottom: 0.7em;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10); 
+  padding-bottom: 0.7em; 
 `;
 
 const StyledCallToActionBtnContainer = styled.div`
