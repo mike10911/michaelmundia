@@ -23,8 +23,8 @@ const LandingPage: React.FC = () => {
         <StyledTitle>SOFTWARE DEVELOPER</StyledTitle>
       </StyledNameTitleContainer>
       <StyledCallToActionBtnContainer>
-        <PrimaryButton btnText={"CONTACT"} btnLink={""}></PrimaryButton>
-        <PrimaryButton btnText={"RESUME"} btnLink={""}></PrimaryButton>
+        <PrimaryButton btnText={"CONTACT"} btnLink={"#"}></PrimaryButton>
+        <PrimaryButton btnText={"RESUME"} btnLink={"#"}></PrimaryButton>
       </StyledCallToActionBtnContainer>
     </StyledLandingContainer>
   );

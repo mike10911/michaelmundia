@@ -10,10 +10,26 @@ import {
   StyledNavLink,
 } from "./NavBar.styles";
 
+import startup from "./startup.mp3";
+import main from "./main.mp3";
+import click from "./click.mp3";
 const NavBar: React.FC = () => {
+  const startupAudio = new Audio(startup);
+  const mainMenuAudio = new Audio(main);
+  const playAudio = () => {
+    startupAudio.play();
+    mainMenuAudio.loop = true;
+    mainMenuAudio.play();
+  }
+  
+
+  const clickAudio = new Audio(click);
+  const playAudioClick = () => {
+      clickAudio.play();
+  }
   return (
     <StyledNavBarContainer animate="animate">
-      <StyledNavBarList>
+      <StyledNavBarList onClick={playAudioClick}>
         <StyledNavBarItem>
           <StyledNavLink href="#">ABOUT</StyledNavLink>
         </StyledNavBarItem>
@@ -24,7 +40,7 @@ const NavBar: React.FC = () => {
           <StyledNavLink href="#">EXPERIENCE</StyledNavLink>
         </StyledNavBarItem>
         <li>
-          <StyledNavLink>
+          <StyledNavLink onClick={playAudio}>
             <H1 whileHover="hover" whileTap="tap" variants={buttonAnimations}>
               M
             </H1>
