@@ -12,9 +12,7 @@ export const ExperienceCardContainer = styled.div<ExperienceCardContainerProps>`
     border-radius: 60px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);  
     color: ${(props) => props.color ? props.color : colors.WHITE}; 
-    margin-left: 25%;
-    margin-right: 25%;
-  
+    margin: 0 auto;
     margin-top: 8em;
 `
 export const StyledExperienceCardImage = styled.img`
