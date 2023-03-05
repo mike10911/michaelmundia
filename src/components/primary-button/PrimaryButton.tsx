@@ -16,6 +16,8 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = (props) => {
         whileHover="hover"
         whileTap="tap"
         variants={buttonAnimations}
+        primaryColor={props.primaryColor}
+        secondaryColor={props.secondaryColor}
       >
         {props.btnText}
       </StyledPrimaryButton>
