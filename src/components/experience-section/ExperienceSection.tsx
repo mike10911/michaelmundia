@@ -17,10 +17,13 @@ const ExperienceSection: React.FC = () => {
             jobTitle={card.jobTitle}
             backgroundColor={card.backgroundColor}
             textColor={card.textColor}
+            company={card.company}
+            date={card.date}
+            location={card.location}
+            bulletPoints={card.bulletPoints}
           />
         );
-      })
-      }
+      })}
     </ExperienceSectionContainer>
   );
 };
