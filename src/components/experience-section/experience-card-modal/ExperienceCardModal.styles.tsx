@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { colors } from "../../../lib/colors";
 
-export const ExperienceCardModalOverlay = styled.div`
+export const ExperienceCardModalOverlay = styled(motion.div)`
   top: 0;
   left: 0;
   right: 0;
@@ -11,16 +12,20 @@ export const ExperienceCardModalOverlay = styled.div`
   zindex: 1000;
 `;
 
-export const ExperienceCardModalConatiner = styled.div`
+export const ExperienceCardModalConatiner = styled(motion.div)`
   background-color: ${colors.WHITE};
-  height: 60em;
-  width: 50em;
+  height: 50em;
+  width: 40em;
+
   border-radius: 60px;
   margin: 0 auto;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 5vh;
+  left: 0vw;
+  right: 0vw;
+  bottom: 0vh;
   padding: 50px;
   zindex: 1000;
+  transform: translate(-50%, -50%);
+ 
 `;

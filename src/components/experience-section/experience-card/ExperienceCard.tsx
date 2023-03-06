@@ -1,8 +1,10 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { ExperienceCardProps } from "../../../lib/types";
 import PrimaryButton from "../../primary-button/PrimaryButton";
 import ExperienceCardModal from "../experience-card-modal/ExperienceCardModal";
 import { ExperienceCardModalOverlay } from "../experience-card-modal/ExperienceCardModal.styles";
+import { backdropVariant, modalVariant } from "../experience-card-modal/ExperienceCardModal.animations";
 import {
   ExperienceCardContainer,
   StyledExperienceCardImage,
@@ -15,6 +17,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
   const handleChildClick = (childState: boolean) => {
     setModalOpen(childState);
   };
+  const ExperienceCardModalMotion = motion(ExperienceCardModal);
   return (
     <>
       <ExperienceCardContainer backgroundColor={props.backgroundColor}>
@@ -29,19 +32,31 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
           btnText="MORE"
         />
       </ExperienceCardContainer>
-      {modalOpen && (
-        <>
-          <ExperienceCardModalOverlay />
-          <ExperienceCardModal
-            handleClicked={handleChildClick}
-            jobTitle={props.jobTitle}
-            company={props.company}
-            date={props.date}
-            location={props.date}
-            bulletPoints={props.bulletPoints}
-          />
-        </>
-      )}
+      <AnimatePresence>
+        {modalOpen && (
+          <>
+            <ExperienceCardModalOverlay
+              variants={backdropVariant}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            />
+            <ExperienceCardModalMotion
+              handleClicked={handleChildClick}
+              jobTitle={props.jobTitle}
+              company={props.company}
+              date={props.date}
+              location={props.date}
+              bulletPoints={props.bulletPoints}
+              key={props.id}
+              variants={modalVariant}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            />
+          </>
+        )}
+      </AnimatePresence>
     </>
   );
 };

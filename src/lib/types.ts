@@ -16,6 +16,7 @@ export interface StyledPrimaryButtonProps {
 
 // EXPERIENCE 
 export interface ExperienceCardProps {
+    id: number;
     image: string;
     jobTitle: string;
     backgroundColor: string;

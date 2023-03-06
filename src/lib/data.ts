@@ -1,4 +1,4 @@
-import { ExperienceCardProps, ExperienceModalsProps } from "./types";
+import { ExperienceCardProps } from "./types";
 
 import hbpLogo from "../images/hbpLogo.svg";
 import ulLogo from "../images/ulLogo.svg";
@@ -10,6 +10,7 @@ export const experienceCardData: ExperienceCardProps[] =
 
     [
         {
+            id: 0,
             image: wmLogo,
             jobTitle: "SOFTWARE DEVELOPMENT CO-OP",
             backgroundColor: colors.WHITE,
@@ -20,6 +21,7 @@ export const experienceCardData: ExperienceCardProps[] =
             bulletPoints: [],
         },
         {
+            id: 1,
             image: hbpLogo,
             jobTitle: "FULL STACK DEVELOPER → TECH LEAD",
             backgroundColor: colors.HBP_BLUE,
@@ -31,6 +33,7 @@ export const experienceCardData: ExperienceCardProps[] =
 
         },
         {
+            id: 2,
             image: ulLogo,
             jobTitle: "FULL STACK DEVELOPMENT INTERN",
             backgroundColor: colors.UL_ORANGE,
