@@ -26,3 +26,5 @@ export const StyledExperienceCardTitle = styled(H2)`
     color: ${(props) => props.color ? props.color : colors.WHITE};
 `
 
+
+
