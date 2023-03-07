@@ -13,15 +13,15 @@ const ExperienceSection: React.FC = () => {
       {experienceCardData.map((card) => {
         return (
           <ExperienceCard
-           
             image={card.image}
+            modalLogo={card.modalLogo}
             jobTitle={card.jobTitle}
             backgroundColor={card.backgroundColor}
             textColor={card.textColor}
             company={card.company}
             date={card.date}
             location={card.location}
-            bulletPoints={card.bulletPoints} id={card.id}          />
+            bulletPoints={card.bulletPoints} id={card.id}/>
         );
       })}
     </ExperienceSectionContainer>

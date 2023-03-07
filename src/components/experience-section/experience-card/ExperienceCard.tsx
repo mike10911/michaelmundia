@@ -4,7 +4,10 @@ import { ExperienceCardProps } from "../../../lib/types";
 import PrimaryButton from "../../primary-button/PrimaryButton";
 import ExperienceCardModal from "../experience-card-modal/ExperienceCardModal";
 import { ExperienceCardModalOverlay } from "../experience-card-modal/ExperienceCardModal.styles";
-import { backdropVariant, modalVariant } from "../experience-card-modal/ExperienceCardModal.animations";
+import {
+  backdropVariant,
+  modalVariant,
+} from "../experience-card-modal/ExperienceCardModal.animations";
 import {
   ExperienceCardContainer,
   StyledExperienceCardImage,
@@ -43,10 +46,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
             />
             <ExperienceCardModalMotion
               handleClicked={handleChildClick}
+              image={props.modalLogo}
               jobTitle={props.jobTitle}
               company={props.company}
               date={props.date}
-              location={props.date}
+              location={props.location}
               bulletPoints={props.bulletPoints}
               key={props.id}
               variants={modalVariant}

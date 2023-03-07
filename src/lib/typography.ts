@@ -24,14 +24,19 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
     font-family: ${fonts.questrial};
+    font-size: 20px;
+    color: ${(props): string => (props.color ? props.color : colors.DARK_GREEN)};
 `;
 
 const H4 = styled.h4`
     font-family: ${fonts.questrial};
+    color: ${(props): string => (props.color ? props.color : colors.DARK_GREEN)};
 `;
 
 const P = styled.p`
     font-family: ${fonts.questrial};
+    font-size: 18px;
+    color: ${(props): string => (props.color ? props.color : colors.DARK_GREEN)};
 `;
 
 const StyledLink = styled(motion.a)`
