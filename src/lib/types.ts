@@ -20,6 +20,7 @@ export interface ExperienceCardProps {
     image: string;
     jobTitle: string;
     backgroundColor: string;
+    modalLogo: string;
     textColor?: string;
     company: string;
     date: string;
@@ -43,6 +44,7 @@ export interface ExperienceModalsProps {
 
 export interface ExperienceCardModalProps {
     handleClicked: (h: any) => any;
+    image: string;
     jobTitle: string;
     company: string;
     date: string;
