@@ -7,18 +7,18 @@ import {
 } from "./ConnectionSection.styles";
 import { BsFillCameraFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
-import { buttonAnimations } from "../primary-button/PrimaryButton.animation";
+
 import { socialIconAnimations } from "./ConnectSection.animations";
 import { colors } from "../../lib/colors";
+import { buttonAnimations } from "../nav-bar/NavBar.animations";
 
 const ConnectSection: React.FC = () => {
   return (
     <ConnectSectionContainer>
-      <ConnectSectionTitle color={colors.PARCHMENT}>LET'S CONNECT!</ConnectSectionTitle>
+      <ConnectSectionTitle color={colors.DARK_GREEN}>LET'S CONNECT!</ConnectSectionTitle>
       <ConnectBoxContainer>
         <SocialIcon
-          variants={socialIconAnimations}
-          animate="animate"
+          variants={buttonAnimations}
           whileHover="hover"
           whileTap="tap"
           href="https://www.linkedin.com/in/michael-mundia/"
@@ -27,8 +27,7 @@ const ConnectSection: React.FC = () => {
           <BsLinkedin size="5rem" />
         </SocialIcon>
         <SocialIcon
-          variants={socialIconAnimations}
-          animate="animate"
+          variants={buttonAnimations}
           whileHover="hover"
           whileTap="tap"
           href="https://github.com/mike10911"
@@ -37,8 +36,7 @@ const ConnectSection: React.FC = () => {
           <BsGithub size="5rem" />
         </SocialIcon>
         <SocialIcon
-          variants={socialIconAnimations}
-          animate="animate"
+          variants={buttonAnimations}
           whileHover="hover"
           whileTap="tap"
           href="mailto:mikeymundia@gmail.com"
@@ -47,8 +45,7 @@ const ConnectSection: React.FC = () => {
           <MdMail size="5rem" />
         </SocialIcon>
         <SocialIcon
-          variants={socialIconAnimations}
-          animate="animate"
+          variants={buttonAnimations}
           whileHover="hover"
           whileTap="tap"
           href="https://mikemundia.wordpress.com/"

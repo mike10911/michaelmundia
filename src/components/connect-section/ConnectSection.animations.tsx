@@ -1,15 +1,4 @@
 export const socialIconAnimations = {
-  animate: {
-    rotate: [1, 15, -14, -14, 12, 16, -18, 12, 1],
-    transition: {
-      duration: 5,
-      repeat: Infinity,
-      ease: "linear",
-      damping: 1000,
-      bounce: 1000,
-      type: "spring",
-    },
-  },
   hover: {
     scale: 1.5,
   },

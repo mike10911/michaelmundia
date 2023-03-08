@@ -8,10 +8,11 @@ export const ConnectSectionContainer = styled.div`
   margin-top: 20em;
   height: 30em;
   width: 70em;
-  background-color: ${colors.LIGHT_GREEN};
+  background-color: ${colors.PARCHMENT};
   margin: 0 auto;
   margin-top: 30em;
   border-radius: 60px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   
 
 `;
@@ -24,15 +25,14 @@ export const ConnectSectionTitle = styled(H1)`
 export const ConnectBoxContainer = styled.div`
   width: 55em;
   height: 10em;
-  border-color: ${colors.PARCHMENT};
-  border-style: solid;
-  border-width: 0.3em;
-  border-radius: 30px;
+  background-color: ${colors.LIGHT_GREEN};
+  border-radius: 100px;
   margin: 0 auto;
   margin-top: 5em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 `;
 export const SocialIcon = styled(motion.a)`
   color: ${colors.PARCHMENT};
