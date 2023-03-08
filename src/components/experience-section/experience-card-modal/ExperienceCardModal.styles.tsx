@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { colors } from "../../../lib/colors";
 import { H2, H3 } from "../../../lib/typography";
-import PrimaryButton from "../../primary-button/PrimaryButton";
 
 export const ExperienceCardModalOverlay = styled(motion.div)`
   top: 0;

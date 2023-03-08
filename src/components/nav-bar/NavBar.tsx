@@ -20,13 +20,12 @@ const NavBar: React.FC = () => {
     startupAudio.play();
     mainMenuAudio.loop = true;
     mainMenuAudio.play();
-  }
-  
+  };
 
   const clickAudio = new Audio(click);
   const playAudioClick = () => {
-      clickAudio.play();
-  }
+    clickAudio.play();
+  };
   return (
     <StyledNavBarContainer animate="animate">
       <StyledNavBarList onClick={playAudioClick}>
@@ -53,7 +52,7 @@ const NavBar: React.FC = () => {
           <StyledNavLink href="#">RESUME</StyledNavLink>
         </StyledNavBarItem>
         <StyledNavBarItem>
-        <StyledNavLink href="#">CONTACT</StyledNavLink>
+          <StyledNavLink href="#">CONTACT</StyledNavLink>
         </StyledNavBarItem>
       </StyledNavBarList>
     </StyledNavBarContainer>

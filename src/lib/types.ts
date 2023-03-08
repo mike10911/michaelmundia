@@ -9,6 +9,14 @@ export interface PrimaryButtonProps {
     onClick?: (h: any) => any;
 }
 
+export interface FooterButtonProps {
+    btnText: string;
+    btnLink?: string;
+    newTab?: boolean;
+    primaryColor?: string;
+    secondaryColor?: string;
+}
+
 export interface StyledPrimaryButtonProps {
     primaryColor?: string;
     secondaryColor?: string;
