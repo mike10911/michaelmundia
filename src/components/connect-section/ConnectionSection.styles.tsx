@@ -5,18 +5,29 @@ import { H1 } from "../../lib/typography";
 
 export const ConnectSectionContainer = styled.div`
   text-align: center;
+  margin-top: 20em;
+  height: 50em;
+  width: 70em;
+  background-color: ${colors.LIGHT_GREEN};
+  margin: 0 auto;
+  margin-top: 30em;
+  border-radius: 60px;
+  
+
 `;
 
 export const ConnectSectionTitle = styled(H1)`
-  padding-top: 1.5em;
   letter-spacing: 0.2rem;
+  padding-top: 3.5em;
 `;
 
 export const ConnectBoxContainer = styled.div`
   width: 55em;
   height: 10em;
-  background-color: ${colors.ORANGE};
-  border-radius: 100px;
+  border-color: ${colors.PARCHMENT};
+  border-style: solid;
+  border-width: 0.3em;
+  border-radius: 30px;
   margin: 0 auto;
   margin-top: 5em;
   display: flex;
@@ -24,5 +35,5 @@ export const ConnectBoxContainer = styled.div`
   align-items: center;
 `;
 export const SocialIcon = styled(motion.a)`
-  color: ${colors.WHITE};
+  color: ${colors.PARCHMENT};
 `;

@@ -7,15 +7,15 @@ const StyledPrimaryButton = styled(motion.button)<StyledPrimaryButtonProps>`
   background-color: ${(props) =>
     props.secondaryColor ? props.secondaryColor : "transparent"};
   color: ${(props) =>
-    props.primaryColor ? props.primaryColor : colors.DARK_GREEN};
+    props.primaryColor ? props.primaryColor : colors.LIGHT_GREEN};
   border-color: ${(props) =>
-    props.primaryColor ? props.primaryColor : colors.DARK_GREEN};
+    props.primaryColor ? props.primaryColor : colors.LIGHT_GREEN};
   transition-duration: 0.5s;
   &:hover {
     color: ${(props) =>
       props.secondaryColor ? props.secondaryColor : colors.WHITE};
     background-color: ${(props) =>
-      props.primaryColor ? props.primaryColor : colors.DARK_GREEN};
+      props.primaryColor ? props.primaryColor : colors.LIGHT_GREEN};
     border-color: ${(props) =>
       props.secondaryColor ? props.secondaryColor : colors.WHITE};
   }

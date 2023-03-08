@@ -1,7 +1,7 @@
 import React from "react";
 import { colors } from "../../lib/colors";
 import { footerNavData } from "../../lib/data";
-import { StyledLink } from "../../lib/typography";
+import { H3, StyledLink } from "../../lib/typography";
 import { buttonAnimations } from "../nav-bar/NavBar.animations";
 import PrimaryButton from "../primary-button/PrimaryButton";
 import {
@@ -32,6 +32,9 @@ const Footer: React.FC = () => {
           />
         ))}
       </ButtonContainer>
+      {/* <H3>
+        © 2023 Made with  <span style={{ color: "red" }}> ❤ </span>  by {"Mike Mundia"}
+      </H3> */}
     </FooterContainer>
   );
 };

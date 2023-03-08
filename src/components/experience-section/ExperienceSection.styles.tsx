@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { H1 } from "../../lib/typography";
 
 const ExperienceSectionContainer = styled.div`
-   
+margin-top: 15em;
 text-align: center;
 `
 

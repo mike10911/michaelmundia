@@ -5,7 +5,7 @@ import { H1 } from '../../lib/typography'
 
 
 const SkillsSectionContainer = styled.section`
-    background-color: ${colors.DARK_GREEN};
+    background-color: ${colors.LIGHT_GREEN};
     height: 60em;
     margin-left: 5%;
     margin-right: 5%;

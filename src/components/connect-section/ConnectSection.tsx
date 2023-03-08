@@ -13,7 +13,7 @@ import { socialIconAnimations } from "./ConnectSection.animations";
 const ConnectSection: React.FC = () => {
   return (
     <ConnectSectionContainer>
-      <ConnectSectionTitle>LET'S CONNECT!</ConnectSectionTitle>
+      <ConnectSectionTitle color="white">LET'S CONNECT!</ConnectSectionTitle>
       <ConnectBoxContainer>
         <SocialIcon
           variants={socialIconAnimations}

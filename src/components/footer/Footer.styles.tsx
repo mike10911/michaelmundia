@@ -7,7 +7,7 @@ export const FooterContainer = styled.footer`
   width: 100%;
   border-radius: 100px 100px 0 0;
   height: 20em;
-  margin-top: 10em;
+  margin-top: 30em;
   text-align: center;
 `;
 export const StyledMFooter = styled(H1)`
@@ -19,4 +19,5 @@ export const StyledMFooter = styled(H1)`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 2em;
 `;
