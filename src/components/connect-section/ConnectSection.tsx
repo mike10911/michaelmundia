@@ -9,11 +9,12 @@ import { BsFillCameraFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 import { buttonAnimations } from "../primary-button/PrimaryButton.animation";
 import { socialIconAnimations } from "./ConnectSection.animations";
+import { colors } from "../../lib/colors";
 
 const ConnectSection: React.FC = () => {
   return (
     <ConnectSectionContainer>
-      <ConnectSectionTitle color="white">LET'S CONNECT!</ConnectSectionTitle>
+      <ConnectSectionTitle color={colors.PARCHMENT}>LET'S CONNECT!</ConnectSectionTitle>
       <ConnectBoxContainer>
         <SocialIcon
           variants={socialIconAnimations}

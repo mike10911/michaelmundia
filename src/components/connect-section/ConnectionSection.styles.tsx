@@ -6,7 +6,7 @@ import { H1 } from "../../lib/typography";
 export const ConnectSectionContainer = styled.div`
   text-align: center;
   margin-top: 20em;
-  height: 50em;
+  height: 30em;
   width: 70em;
   background-color: ${colors.LIGHT_GREEN};
   margin: 0 auto;
@@ -18,7 +18,7 @@ export const ConnectSectionContainer = styled.div`
 
 export const ConnectSectionTitle = styled(H1)`
   letter-spacing: 0.2rem;
-  padding-top: 3.5em;
+  padding-top: 1.2em;
 `;
 
 export const ConnectBoxContainer = styled.div`
