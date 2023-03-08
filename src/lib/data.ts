@@ -1,4 +1,4 @@
-import { ExperienceCardProps } from "./types";
+import { ExperienceCardProps, FooterButtonProps } from "./types";
 
 import hbpLogo from "../images/hbpLogo.svg";
 import ulLogo from "../images/ulLogo.svg";
@@ -55,3 +55,33 @@ export const experienceCardData: ExperienceCardProps[] =
             ],
         },
     ]
+
+// Footer Navagation button data
+export const footerNavData: FooterButtonProps[] = [
+    {
+        btnText: "ABOUT",
+        btnLink: "#",
+    },
+    {
+        btnText: "SKILLS",
+        btnLink: "#",
+    },
+    {
+        btnText: "EXPERIENCE",
+        btnLink: "#",
+    },
+    {
+        btnText: "PROJECTS",
+        btnLink: "#",
+    },
+    {
+        btnText: "PHOTO",
+        btnLink: "#",
+    },
+    {
+        btnText: "RESUME",
+        btnLink: "#",
+    },
+]
+
+
