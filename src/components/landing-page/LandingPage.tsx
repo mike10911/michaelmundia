@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { H1, H2 } from "../../lib/typography";
 import PrimaryButton from "../primary-button/PrimaryButton";
 import { StyledCallToActionBtnContainer } from "../primary-button/PrimaryButton.styles";
@@ -13,6 +14,32 @@ import {
 import resume from "../../docs/MMResume2.pdf";
 
 const LandingPage: React.FC = () => {
+  const [textIndex, setTextIndex] = useState(0);
+const texts = ["SOFTWARE ENGINEER", "ACTOR", "PHOTOGRAPHER", "DESIGNER", "LIGHTING DESIGNER", "RESIDENT ASSISTANT", "THRIFTER"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((textIndex + 1) % texts.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [textIndex, texts.length]);
+
+  const variants = {
+    enter: {
+      y: "-100%",
+      opacity: 0,
+    },
+    center: {
+      y: "0%",
+      opacity: 1,
+    },
+    exit: {
+      y: "100%",
+      opacity: 0,
+    },
+  };
+
   return (
     <StyledLandingContainer>
       <StyledNameTitleContainer>
@@ -21,7 +48,16 @@ const LandingPage: React.FC = () => {
           <StyledM>M</StyledM>
           <StyledName>MUNDIA</StyledName>
         </StyledNameContainer>
-        <StyledTitle>SOFTWARE DEVELOPER</StyledTitle>
+        <motion.div
+          key={texts[textIndex]}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          variants={variants}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          <StyledTitle>{texts[textIndex]}</StyledTitle>
+        </motion.div>
       </StyledNameTitleContainer>
       <StyledCallToActionBtnContainer>
         <PrimaryButton btnText={"CONTACT"} btnLink={"#"}></PrimaryButton>

@@ -10,6 +10,8 @@ import {
   StyledMFooter,
 } from "./Footer.styles";
 
+export const about = document.querySelector('#exp');
+
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
