@@ -1,4 +1,5 @@
 
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { H1 } from "../../lib/typography";
 
@@ -23,7 +24,7 @@ letter-spacing: 0.2rem;
 padding-bottom: 3em;
 `
 
-export const StyledFigmaEmbed = styled.iframe`
+export const StyledFigmaEmbed = styled(motion.iframe)`
     margin: 2em;
     width: 50em;
     height: 30em;
