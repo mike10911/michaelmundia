@@ -51,8 +51,12 @@ export const experienceCardData: ExperienceCardProps[] =
             company: "UpperLevel CRM",
             date: "April 2022 - Sept. 2023",
             location: "Remote",
-            bulletPoints: ["Utilized PHP, JavaScript, and MariaDB to expand the features and capabilities of the CRM and aid clients in automating their workflows using S.O.L.I.D principles",
-                "Increased CRM application test coverage by 70% leading to increased stability of the application for future development", "Developed and maintained RESTful API endpoints for the CRM using PHP and Laravel"
+            bulletPoints: ['Utilized PHP, JavaScript, and MariaDB to expand the features and capabilities of the CRM and aid clients in automating their workflows using S.O.L.I.D principles',
+            'Increased CRM application test coverage by 70% leading to increased stability of the application for future development',
+            'Developed and maintained RESTful API endpoints for the CRM using PHP and Laravel',
+            'Collaborated with the UX team to improve the user interface of the CRM resulting in a 25% increase in user engagement and customer satisfaction',
+            'Implemented a real-time notification system using Pusher.js to alert clients of critical updates to their accounts, resulting in improved communication and reduced response time for support requests',
+            'Conducted code reviews and provided constructive feedback to team members, resulting in a 20% reduction in bugs and improved code quality and consistency across the codebase.'
             ],
         },
     ]

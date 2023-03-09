@@ -14,7 +14,8 @@ const StyledNameTitleContainer = styled.div`
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   margin-top: 15rem;
 `;
-const StyledName = styled(H1)``;
+const StyledName = styled(H1)`
+`;
 const StyledM = styled(H1)`
   font-size: 20rem;
   font-weight: 300;

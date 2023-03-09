@@ -13,9 +13,22 @@ import {
 } from "./LandingPage.styles";
 import resume from "../../docs/MMResume2.pdf";
 
+
+const variantsTop = {
+  enter: { y: "-100%", opacity: 0 },
+  center: { y: "0%", opacity: 1 },
+  exit: { y: "-100%", opacity: 0 },
+};
+
+const variantsBottom = {
+  enter: { y: "100%", opacity: 0 },
+  center: { y: "0%", opacity: 1 },
+  exit: { y: "100%", opacity: 0 },
+};
+
 const LandingPage: React.FC = () => {
   const [textIndex, setTextIndex] = useState(0);
-const texts = ["SOFTWARE ENGINEER", "ACTOR", "PHOTOGRAPHER", "DESIGNER", "LIGHTING DESIGNER", "RESIDENT ASSISTANT", "THRIFTER"];
+const texts = ["SOFTWARE ENGINEER", "ACTOR", "PHOTOGRAPHER", "DESIGNER", "RESIDENT ASSISTANT", "THRIFTER"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -44,9 +57,21 @@ const texts = ["SOFTWARE ENGINEER", "ACTOR", "PHOTOGRAPHER", "DESIGNER", "LIGHTI
     <StyledLandingContainer>
       <StyledNameTitleContainer>
         <StyledNameContainer>
-          <StyledName>MICHAEL</StyledName>
+          <StyledName key="name"
+          initial="enter"
+          animate="center"
+          exit="exit"
+          variants={variantsTop}
+          transition={{ duration: 1.5, ease: "easeInOut" }}>MICHAEL</StyledName>
           <StyledM>M</StyledM>
-          <StyledName>MUNDIA</StyledName>
+          <StyledName
+          key="name"
+          initial="enter"
+          animate="center"
+          exit="exit"
+          variants={variantsBottom}
+          transition={{ duration: 1.5, damping: 100, ease: "easeInOut" }}
+          >MUNDIA</StyledName>
         </StyledNameContainer>
         <motion.div
           key={texts[textIndex]}
