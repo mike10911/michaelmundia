@@ -30,13 +30,13 @@ const NavBar: React.FC = () => {
     <StyledNavBarContainer animate="animate">
       <StyledNavBarList onClick={playAudioClick}>
         <StyledNavBarItem>
-          <StyledNavLink href="#">ABOUT</StyledNavLink>
+          <StyledNavLink href="/#about">ABOUT</StyledNavLink>
         </StyledNavBarItem>
         <StyledNavBarItem>
-          <StyledNavLink href="#">SKILLS</StyledNavLink>
+          <StyledNavLink href="/#skills">SKILLS</StyledNavLink>
         </StyledNavBarItem>
         <StyledNavBarItem>
-          <StyledNavLink href="#">EXPERIENCE</StyledNavLink>
+          <StyledNavLink href="/#exp">EXPERIENCE</StyledNavLink>
         </StyledNavBarItem>
         <li>
           <StyledNavLink onClick={playAudio}>
@@ -52,7 +52,7 @@ const NavBar: React.FC = () => {
           <StyledNavLink href="#">RESUME</StyledNavLink>
         </StyledNavBarItem>
         <StyledNavBarItem>
-          <StyledNavLink href="#">CONTACT</StyledNavLink>
+          <StyledNavLink href="/#contact">CONTACT</StyledNavLink>
         </StyledNavBarItem>
       </StyledNavBarList>
     </StyledNavBarContainer>

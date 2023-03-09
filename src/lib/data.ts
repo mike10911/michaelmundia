@@ -7,6 +7,7 @@ import hbpModalLogo from "../images/hbpModalLogo.svg";
 import ulModalLogo from "../images/ulModalLogo.svg";
 import wmModalLogo from "../images/wmModalLogo.svg";
 import { colors } from "./colors";
+import resume from "../docs/MMResume2.pdf";
 
 // Experience Card Data
 export const experienceCardData: ExperienceCardProps[] =
@@ -60,15 +61,15 @@ export const experienceCardData: ExperienceCardProps[] =
 export const footerNavData: FooterButtonProps[] = [
     {
         btnText: "ABOUT",
-        btnLink: "#",
+        btnLink: "/#about",
     },
     {
         btnText: "SKILLS",
-        btnLink: "#",
+        btnLink: "/#skills",
     },
     {
         btnText: "EXPERIENCE",
-        btnLink: "#",
+        btnLink: "/#exp",
     },
     {
         btnText: "PROJECTS",
@@ -76,11 +77,11 @@ export const footerNavData: FooterButtonProps[] = [
     },
     {
         btnText: "PHOTO",
-        btnLink: "#",
+        btnLink: "https://mikemundia.wordpress.com/",
     },
     {
         btnText: "RESUME",
-        btnLink: "#",
+        btnLink: resume,
     },
 ]
 

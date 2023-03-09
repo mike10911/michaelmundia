@@ -5,7 +5,7 @@ import { SkillsSectionContainer, StyledContentContainer, StyledSkillsSectionTitl
 
 const SkillsSection: React.FC = () => {
   return (
-      <SkillsSectionContainer>
+      <SkillsSectionContainer id="skills">
         <StyledSkillsSectionTitle color={colors.WHITE}>
             SKILLS
         </StyledSkillsSectionTitle>

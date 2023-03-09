@@ -10,6 +10,7 @@ import {
   StyledNameTitleContainer,
   StyledTitle,
 } from "./LandingPage.styles";
+import resume from "../../docs/MMResume2.pdf";
 
 const LandingPage: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ const LandingPage: React.FC = () => {
       </StyledNameTitleContainer>
       <StyledCallToActionBtnContainer>
         <PrimaryButton btnText={"CONTACT"} btnLink={"#"}></PrimaryButton>
-        <PrimaryButton btnText={"RESUME"} btnLink={"#"}></PrimaryButton>
+        <PrimaryButton btnText={"RESUME"} newTab btnLink={resume}></PrimaryButton>
       </StyledCallToActionBtnContainer>
     </StyledLandingContainer>
   );

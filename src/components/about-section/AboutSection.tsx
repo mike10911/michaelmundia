@@ -10,7 +10,7 @@ import {
 
 const AboutSection: React.FC = () => {
   return (
-    <StyledAboutSectionContainer>
+    <StyledAboutSectionContainer id="about">
       <StyledAboutSectionTitle color="white">ABOUT</StyledAboutSectionTitle>
       <StyledTestimonialsContainer>
         <StyledTestimonialContainer1></StyledTestimonialContainer1>

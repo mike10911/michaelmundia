@@ -12,9 +12,10 @@ import { socialIconAnimations } from "./ConnectSection.animations";
 import { colors } from "../../lib/colors";
 import { buttonAnimations } from "../nav-bar/NavBar.animations";
 
+
 const ConnectSection: React.FC = () => {
   return (
-    <ConnectSectionContainer>
+    <ConnectSectionContainer id="contact">
       <ConnectSectionTitle color={colors.DARK_GREEN}>LET'S CONNECT!</ConnectSectionTitle>
       <ConnectBoxContainer>
         <SocialIcon
@@ -55,6 +56,7 @@ const ConnectSection: React.FC = () => {
         </SocialIcon>
       </ConnectBoxContainer>
     </ConnectSectionContainer>
+    
   );
 };
 
