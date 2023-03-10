@@ -6,6 +6,7 @@ import wmLogo from "../images/wmLogo.svg";
 import hbpModalLogo from "../images/hbpModalLogo.svg";
 import ulModalLogo from "../images/ulModalLogo.svg";
 import wmModalLogo from "../images/wmModalLogo.svg";
+import light from "../images/light 1.png";
 import { colors } from "./colors";
 import resume from "../docs/MMResume2.pdf";
 
@@ -27,6 +28,18 @@ export const experienceCardData: ExperienceCardProps[] =
         },
         {
             id: 1,
+            image: light,
+            modalLogo: hbpModalLogo,
+            jobTitle: "CHEIF LIGHTING DESIGNER",
+            backgroundColor: "#161616",
+            textColor: colors.WHITE,
+            company: "Lighting Design Group",
+            date: "March 2023 - Present",
+            location: "Boston, MA",
+            bulletPoints: ["More details to come."],
+        },
+        {
+            id: 2,
             image: hbpLogo,
             modalLogo: hbpModalLogo,
             jobTitle: "FULL STACK DEVELOPER",
@@ -38,11 +51,10 @@ export const experienceCardData: ExperienceCardProps[] =
             bulletPoints:
                 [
                     "Utilizes React, TypeScript, Next, MongoDB to manage/develop HBP’s main site, application portal and internal tools", "Builds reusable and modular components for main site and internal tools using TypeScript, React Hooks, and styled-components", "Hosts engaging workshops to enhance the development team on Framer Motion and Three.js frameworks", "Conducts 50+ code reviews to verify design and implementation, identify bugs, and maintain consistency with HBP code standards", "Works closely with the design team to implement responsive web design and accessibility features", "Implements automated testing using Jest to ensure the reliability and maintainability of the codebase"
-
                 ],
         },
         {
-            id: 2,
+            id: 3,
             image: ulLogo,
             modalLogo: ulModalLogo,
             jobTitle: "FULL STACK DEVELOPMENT INTERN",
@@ -82,10 +94,12 @@ export const footerNavData: FooterButtonProps[] = [
     {
         btnText: "PHOTO",
         btnLink: "https://mikemundia.wordpress.com/",
+        newTab: true,
     },
     {
         btnText: "RESUME",
         btnLink: resume,
+        newTab: true,
     },
 ]
 

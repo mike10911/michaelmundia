@@ -31,12 +31,13 @@ const Footer: React.FC = () => {
             btnLink={item.btnLink}
             primaryColor={colors.LIGHT_GREEN}
             secondaryColor={colors.PARCHMENT}
+            newTab={item.newTab}
           />
         ))}
       </ButtonContainer>
-      {/* <H3>
-        © 2023 Made with  <span style={{ color: "red" }}> ❤ </span>  by {"Mike Mundia"}
-      </H3> */}
+      <H3>
+        © 2023 Made with  <span style={{ color: "red" }}> 🤪 </span>  by {"Mike Mundia"}
+      </H3>
     </FooterContainer>
   );
 };

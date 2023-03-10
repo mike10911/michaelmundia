@@ -17,7 +17,6 @@ export const ExperienceCardContainer = styled.div<ExperienceCardContainerProps>`
 `
 export const StyledExperienceCardImage = styled.img`
    padding-top: 4em;
-
 `
 
 export const StyledExperienceCardTitle = styled(H2)`
