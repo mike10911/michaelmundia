@@ -38,7 +38,7 @@ const ExperienceSection: React.FC = () => {
         <StyledFigmaEmbed whileHover={{scale: 1.1}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwxJ8V78BdS8iuARdK62zFx%2FThrift-it-App-Design%3Ft%3DP5WA0yhDnl6mubbT-1?nojump" allowFullScreen loading="lazy"/>
         <StyledFigmaEmbed whileHover={{scale: 1.1}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqFPwH9eyarbYH6XSWflTKb%2FPortfolio-Landing-Page%3Ft%3DP5WA0yhDnl6mubbT-1?nojump" allowFullScreen loading="lazy"/>
         <StyledFigmaEmbed whileHover={{scale: 1.1}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fi4aAynQHKwElJv0sSIsNqV%2FPortfolio-Landing-Page-2%3Ft%3DP5WA0yhDnl6mubbT-1?nojump" allowFullScreen loading="lazy" />
-        <StyledFigmaEmbed whileHover={{scale: 1.1}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnzyhErxWhYKFaApRAsXRq6%2FDirectional-Posters%3Ft%3DP5WA0yhDnl6mubbT-1?nojump" allowFullScreen loading="lazy"/>
+        <StyledFigmaEmbed whileHover={{scale: 1.1}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FF9JEhOOYoNwv3IFyGRCTHH%2FThrifting-Bulletin%3Fnode-id%3D0%253A1%26t%3DxTeZF3dg4hwIyxwt-1" allowFullScreen loading="lazy"/>
       </FigmaContainer>
     </>
   );
