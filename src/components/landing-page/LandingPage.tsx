@@ -28,7 +28,7 @@ const variantsBottom = {
 
 const LandingPage: React.FC = () => {
   const [textIndex, setTextIndex] = useState(0);
-const texts = ["SOFTWARE ENGINEER", "ACTOR", "PHOTOGRAPHER", "DESIGNER", "RESIDENT ASSISTANT", "THRIFTER"];
+const texts = ["SOFTWARE ENGINEER", "THEATRE PROFESSIONAL", "DESIGNER", "PHOTOGRAPHER", "RESIDENT ASSISTANT", "THRIFTER"];
 
   useEffect(() => {
     const interval = setInterval(() => {
