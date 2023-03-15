@@ -47,6 +47,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
       animate={animation}
       exit="hidden"
       variants={cardVariants}
+      transition={{ duration: 0.7 }}
     >
       <>
         <ExperienceCardContainer backgroundColor={props.backgroundColor}>

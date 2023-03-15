@@ -9,4 +9,7 @@ export const colors = {
     HBP_BLUE: '#1B365D',
     UL_ORANGE: '#FFA500',
     WM_BLUE: '#253F7A',
+    NEU_RED: '#C8102E',
+    MV_GREEN: '#62B35A',
+    TS_GREEN: '#A1D7C2',
 };

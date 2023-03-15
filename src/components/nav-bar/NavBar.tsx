@@ -15,10 +15,8 @@ import main from "./main.mp3";
 import click from "./click.mp3";
 import { useState, useEffect } from "react";
 import { motion, useInView, useTransform } from "framer-motion";
-import { animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-scroll";
-
-
 
 const NavBar: React.FC = () => {
   const startupAudio = new Audio(startup);
@@ -38,7 +36,8 @@ const NavBar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop && scrollTop > 100) {
         setNavBarVisible(false);
       } else {
@@ -50,11 +49,9 @@ const NavBar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollTop]);
 
-  
   const scrollToTop = () => {
     scroll.scrollToTop();
-  }
-  
+  };
 
   return (
     <motion.nav
@@ -70,47 +67,60 @@ const NavBar: React.FC = () => {
     >
       <StyledNavBarContainer animate="animate">
         <StyledNavBarList onClick={playAudioClick}>
-        <Link to="about" smooth={true} duration={500} offset={-70}>
-        <StyledNavBarItem>
-            <StyledNavLink  >ABOUT</StyledNavLink>
-          </StyledNavBarItem>
-            </Link>
-            <Link to="skills" smooth={true} duration={500} offset={-70}>
+          <Link to="about" smooth={true} duration={500} offset={-70}>
             <StyledNavBarItem>
-            <StyledNavLink >SKILLS</StyledNavLink>
-          </StyledNavBarItem>
-            </Link>
-            <Link to="exp" smooth={true} duration={1000} offset={-70}>
-          <StyledNavBarItem>
-            <StyledNavLink href="/#exp">EXPERIENCE</StyledNavLink>
-          </StyledNavBarItem>
-            </Link>
+              <StyledNavLink href="/#about">ABOUT</StyledNavLink>
+            </StyledNavBarItem>
+          </Link>
+          <Link to="skills" smooth={true} duration={500} offset={-70}>
+            <StyledNavBarItem>
+              <StyledNavLink href="/#skills" >SKILLS</StyledNavLink>
+            </StyledNavBarItem>
+          </Link>
+          <Link to="exp" smooth={true} duration={1000} offset={-70}>
+            <StyledNavBarItem>
+              <StyledNavLink href="/#exp">EXPERIENCE</StyledNavLink>
+            </StyledNavBarItem>
+          </Link>
+          <Link to="design" smooth={true} duration={500} offset={-70}>
+            <StyledNavBarItem>
+              <StyledNavLink href="#">DESIGN</StyledNavLink>
+            </StyledNavBarItem>
+          </Link>
           <li>
-            <StyledNavLink onClick={playAudio}>
-              <H1  onClick={scrollToTop} whileHover="hover" whileTap="tap" variants={buttonAnimations}>
+            <StyledNavLink  href="#" onClick={playAudio}>
+              <H1
+                onClick={scrollToTop}
+                whileHover="hover"
+                whileTap="tap"
+                variants={buttonAnimations}
+              >
                 M
               </H1>
             </StyledNavLink>
           </li>
           <Link to="projects" smooth={true} duration={500} offset={-70}>
-          <StyledNavBarItem>
-            <StyledNavLink href="#">PROJECTS</StyledNavLink>
-          </StyledNavBarItem>
+            <StyledNavBarItem>
+              <StyledNavLink href="#">PROJECTS</StyledNavLink>
+            </StyledNavBarItem>
           </Link>
+          
+            <StyledNavBarItem>
+              <StyledNavLink href="#">PHOTO</StyledNavLink>
+            </StyledNavBarItem>
+     
           <StyledNavBarItem>
             <StyledNavLink href="#">RESUME</StyledNavLink>
           </StyledNavBarItem>
           <Link to="contact" smooth={true} duration={500} offset={-70}>
-          <StyledNavBarItem>
-
-            <StyledNavLink href="/#contact">CONTACT</StyledNavLink>
-          </StyledNavBarItem>
+            <StyledNavBarItem>
+              <StyledNavLink href="/#contact">CONTACT</StyledNavLink>
+            </StyledNavBarItem>
           </Link>
         </StyledNavBarList>
       </StyledNavBarContainer>
     </motion.nav>
   );
 };
-
 
 export default NavBar;

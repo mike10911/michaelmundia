@@ -15,16 +15,16 @@ export const ExperienceCardModalOverlay = styled(motion.div)`
 
 export const ExperienceCardModalConatiner = styled(motion.div)`
   background-color: ${colors.WHITE};
-  width: 45em;
-  height: 50em;
+  width: 40em;
+  height: 45em;
   border-radius: 60px;
   margin: 0 auto;
   position: fixed;
-  top: 4vh;
+  top: 15vh;
   left: 0vw;
   right: 0vw;
-  bottom: 0vh;
-  padding: 50px;
+  bottom: 1vh;
+  padding: 40px;
   zindex: 1000;
   transform: translate(-50%, -50%);
 `;
@@ -32,7 +32,7 @@ export const ExperienceCardModalConatiner = styled(motion.div)`
 export const ModalBackButtonDiv = styled.div`
   position: absolute;
   bottom: 5%;
-  left: 73%;
+  left: 70%;
 `;
 
 export const ModalUpperSection = styled.div`

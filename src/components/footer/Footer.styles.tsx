@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
   background-color: ${colors.LIGHT_GREEN};
   width: 100%;
   border-radius: 100px 100px 0 0;
-  height: 20em;
+  height: 22em;
   margin-top: 30em;
   text-align: center;
 `;
@@ -19,5 +19,6 @@ export const StyledMFooter = styled(H1)`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
+  
 `;

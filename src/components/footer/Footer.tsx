@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
         ))}
       </ButtonContainer>
       <H3>
-        © 2023 Made with  <span style={{ color: "red" }}> 🤪 </span>  by {"Mike Mundia"}
+        © 2023 | Designed & Built by Mike Mundia | Powered by React
       </H3>
     </FooterContainer>
   );
