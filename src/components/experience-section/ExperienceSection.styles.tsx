@@ -10,15 +10,11 @@ text-align: center;
 const StyledExperienceCardContainer= styled.div`
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(790px, 1fr));
     grid-gap: 20px;
     padding-left: 5em;
     padding-right: 5em;
     gap: 2em;
-   
-
-    
-
 `
 
 const StyledExperienceSectionTitle = styled(H1)`
@@ -45,7 +41,7 @@ export const StyledFigmaEmbed = styled(motion.iframe)`
     width: 45em;
     height: 30em;
     border-radius: 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);  
     border: 1px solid ;
     
 `
