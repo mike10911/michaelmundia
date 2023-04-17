@@ -1,16 +1,19 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { colors } from "../../lib/colors";
-import { H1, H2, P } from "../../lib/typography";
+import { H1, H2, H3, P } from "../../lib/typography";
 
 const StyledAboutSectionContainer = styled.div`
   background-color: ${colors.LIGHT_GREEN};
   margin-left: 5%;
   margin-right: 5%;
-  height: 120em;
+  
   margin-top: 12em;
   border-radius: 30px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  padding-bottom: 4em;
+  height: 50em;
+  
 `;
 const StyledAboutSectionTitle = styled(H1)`
   text-align: center;
@@ -57,11 +60,14 @@ const AboutSectionContent = styled.div`
 `;
 const StyledNameTextContainer = styled.div``;
 const StyledName = styled(H2)``;
-const StyledAboutText = styled(P)`
+const StyledAboutText = styled(H3)`
     width: 90%;
     margin-right: -5em;
     max-height: 2em;
     line-height: 1.5;
+    word-wrap: break-word;
+    letter-spacing: 0.1rem;
+    
 `;
 
 const StyledImageSocialsContainer = styled.div``;

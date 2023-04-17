@@ -1,6 +1,6 @@
 import { ExperienceCardProps, FooterButtonProps } from "./types";
 
-import hbpLogo from "../images/hbpLogo.svg";
+import hbpLogo from "../images/hbpLogo.png";
 import ulLogo from "../images/ulLogo.svg";
 import wmLogo from "../images/wmLogo.svg";
 import photoMike from "../images/ppp.png";
@@ -22,7 +22,7 @@ export const experienceCardData: ExperienceCardProps[] =
             id: 0,
             image: wmLogo,
             modalLogo: wmModalLogo,
-            jobTitle: "SOFTWARE DEVELOPER CO-OP",
+            jobTitle: "SOFTWARE ENGINEER CO-OP",
             backgroundColor: colors.WHITE,
             textColor: colors.WM_BLUE,
             company: "Wood Mackenzie",
@@ -32,6 +32,18 @@ export const experienceCardData: ExperienceCardProps[] =
         },
         {
             id: 1,
+            image: hbpLogo,
+            modalLogo: hbpModalLogo,
+            jobTitle: "TECHNICAL LEAD",
+            backgroundColor: colors.HBP_BLUE,
+            textColor: colors.WHITE,
+            company: "Hackbeanpot, Inc.",
+            date: "April 2023 - Present",
+            location: "Boston, MA",
+            bulletPoints: ["More details to come."],
+        },
+        {
+            id: 2,
             image: light,
             modalLogo: hbpModalLogo,
             jobTitle: "CHEIF LIGHTING DESIGNER",
@@ -43,14 +55,14 @@ export const experienceCardData: ExperienceCardProps[] =
             bulletPoints: ["More details to come."],
         },
         {
-            id: 2,
+            id: 3,
             image: hbpLogo,
             modalLogo: hbpModalLogo,
-            jobTitle: "FULL STACK DEVELOPER",
+            jobTitle: "SOFTWARE DEVELOPER",
             backgroundColor: colors.HBP_BLUE,
             textColor: colors.WHITE,
             company: "Hackbeanpot, Inc.",
-            date: "April 2022 - Present",
+            date: "April 2022 - April 2023",
             location: "Boston, MA",
             bulletPoints:
                 [
@@ -58,7 +70,7 @@ export const experienceCardData: ExperienceCardProps[] =
                 ],
         },
         {
-            id: 3,
+            id: 4,
             image: ulLogo,
             modalLogo: ulModalLogo,
             jobTitle: "FULL STACK DEVELOPMENT INTERN",
@@ -75,7 +87,7 @@ export const experienceCardData: ExperienceCardProps[] =
             ],
         },
         {
-            id: 4,
+            id: 5,
             image: neu,
             modalLogo: hbpModalLogo,
             jobTitle: "COMPUTER SCIENCE RESIDENT ASSISTANT",
@@ -94,7 +106,7 @@ export const experienceCardData: ExperienceCardProps[] =
         },
 
         {
-            id: 5,
+            id: 6,
             image: mvlogo,
             modalLogo: hbpModalLogo,
             jobTitle: "LEAD STAGE ACTOR: MALCOLM",
@@ -109,7 +121,7 @@ export const experienceCardData: ExperienceCardProps[] =
         },
 
         {
-            id: 6,
+            id: 7,
             image: tslogo,
             modalLogo: hbpModalLogo,
             jobTitle: "SUPPORTING FILM ACTOR: M.I.T. HACKER",
@@ -124,7 +136,7 @@ export const experienceCardData: ExperienceCardProps[] =
 
 
         {
-            id: 7,
+            id: 8,
             image: photoMike,
             modalLogo: hbpModalLogo,
             jobTitle: "FOUNDER/PHOTOGRAPHER",

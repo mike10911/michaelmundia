@@ -10,11 +10,12 @@ text-align: center;
 const StyledExperienceCardContainer= styled.div`
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(790px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(670px, 1fr));
+    grid-gap: 10px;
     padding-left: 5em;
     padding-right: 5em;
-    gap: 2em;
+    max-width: 100%;
+    gap: 1em;
 `
 
 const StyledExperienceSectionTitle = styled(H1)`
