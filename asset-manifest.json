@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e109c42e.css",
-    "main.js": "/static/js/main.539b8f71.js",
+    "main.js": "/static/js/main.60bd4107.js",
     "static/media/main.mp3": "/static/media/main.a4bb53c4b8bc64c0cd7d.mp3",
     "static/media/profile.png": "/static/media/profile.2023766a1b0d110ead90.png",
     "static/media/MMResume2.pdf": "/static/media/MMResume2.2c0b05ea70254103862c.pdf",
@@ -11,7 +11,6 @@
     "static/media/light 1.png": "/static/media/light 1.62081c653d29f4fd4ca7.png",
     "static/media/ppp.png": "/static/media/ppp.214e01cdceaeb3e0d57b.png",
     "static/media/neu.png": "/static/media/neu.2070af88267bb8c066b8.png",
-    "static/media/hbpLogo.svg": "/static/media/hbpLogo.ebfeb69189e24ceba8c54200934b6f4e.svg",
     "static/media/tslogo.png": "/static/media/tslogo.7d54142ce6d72efabaaf.png",
     "static/media/mvlogo.png": "/static/media/mvlogo.6df525b2def741f75ed8.png",
     "static/media/hbpModalLogo.svg": "/static/media/hbpModalLogo.77e56b00b5356538b195a42f6e4572c2.svg",
@@ -20,10 +19,10 @@
     "static/media/wmLogo.svg": "/static/media/wmLogo.1a148d06712a5c5951e1496d62f1acfb.svg",
     "index.html": "/index.html",
     "main.e109c42e.css.map": "/static/css/main.e109c42e.css.map",
-    "main.539b8f71.js.map": "/static/js/main.539b8f71.js.map"
+    "main.60bd4107.js.map": "/static/js/main.60bd4107.js.map"
   },
   "entrypoints": [
     "static/css/main.e109c42e.css",
-    "static/js/main.539b8f71.js"
+    "static/js/main.60bd4107.js"
   ]
 }
