@@ -85,7 +85,7 @@ const texts = ["SOFTWARE ENGINEER", "TECHNICAL LEAD", "THEATRE PROFESSIONAL", "D
         </motion.div>
       </StyledNameTitleContainer>
       <StyledCallToActionBtnContainer>
-        <PrimaryButton btnText={"CONTACT"} btnLink={"#"}></PrimaryButton>
+        <PrimaryButton btnText={"CONTACT"} btnLink={"#contact"}></PrimaryButton>
         <PrimaryButton btnText={"RESUME"} newTab btnLink={resume}></PrimaryButton>
       </StyledCallToActionBtnContainer>
     </StyledLandingContainer>

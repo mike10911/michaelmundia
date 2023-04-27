@@ -76,6 +76,7 @@ const AboutSection: React.FC = () => {
               whileTap="tap"
               href="https://github.com/mike10911"
               target="_blank"
+              
             >
               <BsGithub size="3rem" />
             </StyledAboutSocialIcon>

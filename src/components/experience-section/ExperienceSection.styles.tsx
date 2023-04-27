@@ -43,8 +43,7 @@ export const StyledFigmaEmbed = styled(motion.iframe)`
     height: 30em;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);  
-    border: 1px solid ;
-    
+    border: 1px solid;
 `
 
 export {ExperienceSectionContainer, StyledExperienceSectionTitle, FigmaContainer , StyledDesignExperienceSectionTitle, StyledExperienceCardContainer}

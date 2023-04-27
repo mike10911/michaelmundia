@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import LandingPage from "./components/landing-page/LandingPage";
 import NavBar from "./components/nav-bar/NavBar";
 import SkillsSection from "./components/skills-section/SkillsSection";
+import { CSSReset, ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (

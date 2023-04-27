@@ -8,16 +8,16 @@ export interface PrimaryButtonProps {
     secondaryColor?: string;
     onClick?: (h: any) => any;
 }
-
-export interface FooterButtonProps {
-    btnText: string;
-    btnLink?: string;
-    newTab?: boolean;
+export interface StyledPrimaryButtonProps {
     primaryColor?: string;
     secondaryColor?: string;
 }
 
-export interface StyledPrimaryButtonProps {
+// FOOTER
+export interface FooterButtonProps {
+    btnText: string;
+    btnLink?: string;
+    newTab?: boolean;
     primaryColor?: string;
     secondaryColor?: string;
 }
@@ -58,4 +58,16 @@ export interface ExperienceCardModalProps {
     date: string;
     location: string;
     bulletPoints: string[];
+}
+
+
+// SKILLS
+export interface SkillTabProps {
+    id: number;
+    title: string;
+    content: any[];
+}
+
+export interface StyledTabNameProps {
+    active: boolean;
 }

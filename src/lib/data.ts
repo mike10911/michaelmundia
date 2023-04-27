@@ -1,4 +1,4 @@
-import { ExperienceCardProps, FooterButtonProps } from "./types";
+import { ExperienceCardProps, FooterButtonProps, SkillTabProps } from "./types";
 
 import hbpLogo from "../images/hbpLogo.png";
 import ulLogo from "../images/ulLogo.svg";
@@ -13,6 +13,33 @@ import wmModalLogo from "../images/wmModalLogo.svg";
 import light from "../images/light 1.png";
 import { colors } from "./colors";
 import resume from "../docs/MMResume2.pdf";
+import html from "../images/html.svg";
+import css from "../images/css.svg";
+import js from "../images/js.svg";
+import ts from "../images/ts.svg";
+import java from "../images/java.svg";
+import mysql from "../images/mysql.svg";
+import python from "../images/python.svg";
+import php from "../images/php.svg";
+import react from "../images/react.svg";
+import next from "../images/next.svg";
+import node from "../images/node.svg";
+import mongo from "../images/mongo.svg";
+import express from "../images/express.svg";
+import three from "../images/three.svg";
+import jest from "../images/jest.svg";
+import framer from "../images/framer.svg";
+import git from "../images/git.svg";
+import figma from "../images/figma.svg";
+import docker from "../images/docker.svg";
+import github from "../images/github.svg";
+import google from "../images/google.svg";
+import intellij from "../images/intellij.svg";
+import vscode from "../images/vscode.svg";
+import notion from "../images/notion.svg";
+import vercel from "../images/vercel.svg";
+
+
 
 // Experience Card Data
 export const experienceCardData: ExperienceCardProps[] =
@@ -80,10 +107,10 @@ export const experienceCardData: ExperienceCardProps[] =
             date: "April 2022 - Sept. 2023",
             location: "Remote",
             bulletPoints: ['Utilized PHP, JavaScript, and MariaDB to expand the features and capabilities of the CRM and aid clients in automating their workflows using S.O.L.I.D principles',
-            'Increased CRM application test coverage by 70% leading to increased stability of the application for future development',
-            'Developed and maintained RESTful API endpoints for the CRM using PHP and Laravel',
-            'Collaborated with the UX team to improve the user interface of the CRM resulting in a 25% increase in user engagement and customer satisfaction',
-            'Conducted code reviews and provided constructive feedback to team members, resulting in a 20% reduction in bugs and improved code quality and consistency across the codebase.'
+                'Increased CRM application test coverage by 70% leading to increased stability of the application for future development',
+                'Developed and maintained RESTful API endpoints for the CRM using PHP and Laravel',
+                'Collaborated with the UX team to improve the user interface of the CRM resulting in a 25% increase in user engagement and customer satisfaction',
+                'Conducted code reviews and provided constructive feedback to team members, resulting in a 20% reduction in bugs and improved code quality and consistency across the codebase.'
             ],
         },
         {
@@ -102,7 +129,7 @@ export const experienceCardData: ExperienceCardProps[] =
                 "Serves as a liaison between residents and residence hall staff, as well as university administration",
                 "Organized a campus-wide hackathon event, which drew in over 200 participants.",
                 "Designed and created graphic designs for event stickers, flyers, and social media posts, resulting in an increase in event attendance by 80% compared to the previous year."
-              ],
+            ],
         },
 
         {
@@ -130,8 +157,8 @@ export const experienceCardData: ExperienceCardProps[] =
             company: "Twist and Shout Communications",
             date: "Nov. 2021 - Dec. 2022",
             location: "Cambridge, MA",
-            bulletPoints:["Supporting role as an M.I.T. Hacker in the upcoming season 4 of The Inside Man, produced by Twist and Shout Communications"]
-            
+            bulletPoints: ["Supporting role as an M.I.T. Hacker in the upcoming season 4 of The Inside Man, produced by Twist and Shout Communications"]
+
         },
 
 
@@ -179,4 +206,49 @@ export const footerNavData: FooterButtonProps[] = [
     },
 ]
 
+// images for skills tabs
+export const skillTabs: SkillTabProps[] = [
+    {
+        id: 0,
+        title: "LANGUAGES",
+        content: [
+            html,
+            css,
+            js,
+            ts,
+            java,
+            mysql,
+            python,
+            php
+        ]
+    },
+    {
+        id: 1,
+        title: "FRAMEWORKS",
+        content: [
+            git,
+            react,
+            next,
+            node,
+            express,
+            mongo,
+            three,
+            framer,
 
+        ]
+    },
+    {
+        id: 2,
+        title: "SOFTWARE",
+        content: [
+            github,
+            vscode,
+            figma,
+            google,
+            docker,
+            vercel,
+            notion,
+            intellij
+        ]
+    },
+]

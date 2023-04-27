@@ -12,4 +12,6 @@ export const colors = {
     NEU_RED: '#C8102E',
     MV_GREEN: '#62B35A',
     TS_GREEN: '#A1D7C2',
+    TRANSPARENT: 'transparent',
+    HOVER_GREY: '#F5F5F7',
 };

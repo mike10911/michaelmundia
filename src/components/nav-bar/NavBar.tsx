@@ -17,8 +17,38 @@ import { useState, useEffect } from "react";
 import { motion, useInView, useTransform } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-scroll";
+import { Button, IconButton, Snackbar} from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 
 const NavBar: React.FC = () => {
+  const [open, setOpen] = useState(false);
+  const handleProjectClick = () => {
+    setOpen(true);
+  };
+
+  const handleProjectClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+    
+  };
+
+  const action = (
+    <React.Fragment>
+      
+      <IconButton
+        size="large"
+        aria-label="close"
+        color="inherit"
+        onClick={handleProjectClose}
+      >
+        <CloseIcon fontSize="medium" />
+      </IconButton>
+    </React.Fragment>
+  );
+
   const startupAudio = new Audio(startup);
   const mainMenuAudio = new Audio(main);
   const playAudio = () => {
@@ -101,16 +131,26 @@ const NavBar: React.FC = () => {
           </li>
           <Link to="projects" smooth={true} duration={500} offset={-70}>
             <StyledNavBarItem>
-              <StyledNavLink href="#">PROJECTS</StyledNavLink>
+              <StyledNavLink onClick={handleProjectClick}>PROJECTS</StyledNavLink>
+              <Snackbar
+        open={open}
+        autoHideDuration={2000}
+        onClose={handleProjectClose}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        message="Coming Soon!"
+        action={action}
+        color="success"
+        
+      />
             </StyledNavBarItem>
           </Link>
           
             <StyledNavBarItem>
-              <StyledNavLink href="#">PHOTO</StyledNavLink>
+              <StyledNavLink href="https://mikemundia.wordpress.com/" target="blank">PHOTO</StyledNavLink>
             </StyledNavBarItem>
      
           <StyledNavBarItem>
-            <StyledNavLink href="#">RESUME</StyledNavLink>
+            <StyledNavLink onClick={handleProjectClick}>THEATRE</StyledNavLink>
           </StyledNavBarItem>
           <Link to="contact" smooth={true} duration={500} offset={-70}>
             <StyledNavBarItem>
