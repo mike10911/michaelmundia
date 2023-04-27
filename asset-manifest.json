@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e109c42e.css",
-    "main.js": "/static/js/main.60bd4107.js",
+    "main.js": "/static/js/main.07d0f26e.js",
     "static/media/main.mp3": "/static/media/main.a4bb53c4b8bc64c0cd7d.mp3",
     "static/media/profile.png": "/static/media/profile.2023766a1b0d110ead90.png",
     "static/media/MMResume2.pdf": "/static/media/MMResume2.2c0b05ea70254103862c.pdf",
@@ -13,16 +13,40 @@
     "static/media/neu.png": "/static/media/neu.2070af88267bb8c066b8.png",
     "static/media/tslogo.png": "/static/media/tslogo.7d54142ce6d72efabaaf.png",
     "static/media/mvlogo.png": "/static/media/mvlogo.6df525b2def741f75ed8.png",
+    "static/media/vscode.svg": "/static/media/vscode.ee26dfe6247788c2d217a22fc51bf781.svg",
+    "static/media/php.svg": "/static/media/php.1e73afc4967ab2fe950ba75b323d73b4.svg",
+    "static/media/mongo.svg": "/static/media/mongo.37c254895b58a4072247e428fc867bbe.svg",
     "static/media/hbpModalLogo.svg": "/static/media/hbpModalLogo.77e56b00b5356538b195a42f6e4572c2.svg",
     "static/media/wmModalLogo.svg": "/static/media/wmModalLogo.38d532ce5f7221045f19502e3576bdff.svg",
     "static/media/click.mp3": "/static/media/click.1fad4e2e8a1499fe8dbc.mp3",
+    "static/media/three.svg": "/static/media/three.a6cbc148ec64efe6fa12f026bb46d52e.svg",
     "static/media/wmLogo.svg": "/static/media/wmLogo.1a148d06712a5c5951e1496d62f1acfb.svg",
+    "static/media/python.svg": "/static/media/python.af7fb8bab2f10b12cb04731a32fe6015.svg",
+    "static/media/mysql.svg": "/static/media/mysql.de1f441d77fea35c2d6e1338f3cc540a.svg",
+    "static/media/github.svg": "/static/media/github.aca0843252807bb6d1229e8179a46676.svg",
+    "static/media/react.svg": "/static/media/react.7c8375868df8c536ab4f2d4078519904.svg",
+    "static/media/google.svg": "/static/media/google.74a8e66916ab7723c8bdbd532f66a054.svg",
+    "static/media/node.svg": "/static/media/node.8629b14e617e5ef13fedea0da8235e11.svg",
+    "static/media/docker.svg": "/static/media/docker.feed2a7012297193139d8804eb1037e3.svg",
+    "static/media/java.svg": "/static/media/java.fa3aaa0d9601f02765fd0f91adf5f205.svg",
+    "static/media/express.svg": "/static/media/express.85a49c648d6d91844db838951511ea8c.svg",
+    "static/media/git.svg": "/static/media/git.ab7548110aa10ed62b9ffbbd525e1644.svg",
+    "static/media/intellij.svg": "/static/media/intellij.f62a5f1b7020791a9337e8fe4da9223d.svg",
+    "static/media/vercel.svg": "/static/media/vercel.5c67a1ea0914f6aa35ad96d18ee0edd7.svg",
+    "static/media/notion.svg": "/static/media/notion.3912ea534233e4f2c517df6cb10b5610.svg",
+    "static/media/js.svg": "/static/media/js.4c1b5332c1b1057928f6f06cf972c91c.svg",
+    "static/media/css.svg": "/static/media/css.1d023123249332b8246d98e506eaa7a6.svg",
+    "static/media/ts.svg": "/static/media/ts.8d9549db1a0f5d73a35aa5dab48a09f9.svg",
+    "static/media/html.svg": "/static/media/html.ed5a66323fb7466700b1b551dcf00ea5.svg",
+    "static/media/next.svg": "/static/media/next.87c6bb812d14217a2f68856845c6f754.svg",
     "index.html": "/index.html",
+    "static/media/figma.svg": "/static/media/figma.2c2c9d7ff067a3272fbcb7e4700d15a6.svg",
+    "static/media/framer.svg": "/static/media/framer.f4ff563ebcc3a907923eec8f6c843c47.svg",
     "main.e109c42e.css.map": "/static/css/main.e109c42e.css.map",
-    "main.60bd4107.js.map": "/static/js/main.60bd4107.js.map"
+    "main.07d0f26e.js.map": "/static/js/main.07d0f26e.js.map"
   },
   "entrypoints": [
     "static/css/main.e109c42e.css",
-    "static/js/main.60bd4107.js"
+    "static/js/main.07d0f26e.js"
   ]
 }
