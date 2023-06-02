@@ -44,7 +44,7 @@ const SkillsSection: React.FC = () => {
           transition={{ duration: 1 }}
         >
           {skillTabs[activeTab].content.slice(0, 4).map((img) => (
-            <SkillImage whileHover={{scale: 1.2}} alt="d" src={img} />
+            <SkillImage alt="img" src={img} />
           ))}
         </SkillImageWrapper>
 
@@ -55,7 +55,7 @@ const SkillsSection: React.FC = () => {
           transition={{ duration: 1 }}
         >
           {skillTabs[activeTab].content.slice(4).map((img) => (
-            <SkillImage whileHover={{scale: 1.2}} alt="d" src={img} />
+            <SkillImage alt="d" src={img} />
           ))}
         </SkillImageWrapper>
         </AnimatePresence>
