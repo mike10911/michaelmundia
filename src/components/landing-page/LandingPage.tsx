@@ -13,7 +13,6 @@ import {
 } from "./LandingPage.styles";
 import resume from "../../docs/MMResume.pdf";
 
-
 const variantsTop = {
   enter: { y: "-100%", opacity: 0 },
   center: { y: "0%", opacity: 1 },
@@ -28,7 +27,15 @@ const variantsBottom = {
 
 const LandingPage: React.FC = () => {
   const [textIndex, setTextIndex] = useState(0);
-const texts = ["SOFTWARE ENGINEER", "TECHNICAL LEAD", "THEATRE PROFESSIONAL", "DESIGNER", "PHOTOGRAPHER", "RESIDENT ASSISTANT", "THRIFTER"];
+  const texts = [
+    "SOFTWARE ENGINEER",
+    "TECHNICAL LEAD",
+    "THEATRE PROFESSIONAL",
+    "DESIGNER",
+    "PHOTOGRAPHER",
+    "RESIDENT ASSISTANT",
+    "THRIFTER",
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -57,21 +64,27 @@ const texts = ["SOFTWARE ENGINEER", "TECHNICAL LEAD", "THEATRE PROFESSIONAL", "D
     <StyledLandingContainer>
       <StyledNameTitleContainer>
         <StyledNameContainer>
-          <StyledName key="name"
-          initial="enter"
-          animate="center"
-          exit="exit"
-          variants={variantsTop}
-          transition={{ duration: 1.5, ease: "easeInOut" }}>MICHAEL</StyledName>
+          <StyledName
+            key="name"
+            initial="enter"
+            animate="center"
+            exit="exit"
+            variants={variantsTop}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+          >
+            MICHAEL
+          </StyledName>
           <StyledM>M</StyledM>
           <StyledName
-          key="name"
-          initial="enter"
-          animate="center"
-          exit="exit"
-          variants={variantsBottom}
-          transition={{ duration: 1.5, damping: 100, ease: "easeInOut" }}
-          >MUNDIA</StyledName>
+            key="name"
+            initial="enter"
+            animate="center"
+            exit="exit"
+            variants={variantsBottom}
+            transition={{ duration: 1.5, damping: 100, ease: "easeInOut" }}
+          >
+            MUNDIA
+          </StyledName>
         </StyledNameContainer>
         <motion.div
           key={texts[textIndex]}
@@ -86,7 +99,11 @@ const texts = ["SOFTWARE ENGINEER", "TECHNICAL LEAD", "THEATRE PROFESSIONAL", "D
       </StyledNameTitleContainer>
       <StyledCallToActionBtnContainer>
         <PrimaryButton btnText={"CONTACT"} btnLink={"#contact"}></PrimaryButton>
-        <PrimaryButton btnText={"RESUME"} newTab btnLink={resume}></PrimaryButton>
+        <PrimaryButton
+          btnText={"RESUME"}
+          newTab
+          btnLink={resume}
+        ></PrimaryButton>
       </StyledCallToActionBtnContainer>
     </StyledLandingContainer>
   );

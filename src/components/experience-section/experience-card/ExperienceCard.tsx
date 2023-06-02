@@ -49,7 +49,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
       variants={cardVariants}
       transition={{ duration: 0.7 }}
     >
-      <>
         <ExperienceCardContainer backgroundColor={props.backgroundColor}>
           <StyledExperienceCardImage src={props.image} />
           <StyledExperienceCardTitle color={props.textColor}>
@@ -88,7 +87,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
             </>
           )}
         </AnimatePresence>
-      </>
     </motion.div>
   );
 };

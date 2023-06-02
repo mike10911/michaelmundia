@@ -11,7 +11,10 @@ import {
 import { experienceCardData } from "../../lib/data";
 import { ExperienceCardContainer } from "./experience-card/ExperienceCard.styles";
 import { designExpData } from "../../lib/data";
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+import { FigmaEmbed } from "./figma-embed/FigmaEmbed";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -19,6 +22,13 @@ const cardVariants = {
 };
 
 const ExperienceSection: React.FC = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+  React.useEffect(() => {
+    if (inView) {
+      animation.start("visible");
+    }
+  }, [animation, inView]);
   return (
     <>
       <ExperienceSectionContainer id="exp">
@@ -47,14 +57,7 @@ const ExperienceSection: React.FC = () => {
           DESIGN EXPERIENCE
         </StyledDesignExperienceSectionTitle>
         {designExpData.map((card) => {
-          return (
-            <StyledFigmaEmbed
-              whileHover={{ scale: 1.1 }}
-              src={card.figmaLink}
-              allowFullScreen
-              loading="lazy"
-            />
-          );
+          return <FigmaEmbed name={card.name} figmaLink={card.figmaLink} />;
         })}
       </FigmaContainer>
     </>
