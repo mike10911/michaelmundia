@@ -1,4 +1,4 @@
-import { ExperienceCardProps, FooterButtonProps, SkillTabProps } from "./types";
+import { DesignExpProps, ExperienceCardProps, FooterButtonProps, SkillTabProps } from "./types";
 
 import hbpLogo from "../images/hbpLogo.png";
 import ulLogo from "../images/ulLogo.svg";
@@ -175,6 +175,35 @@ export const experienceCardData: ExperienceCardProps[] =
             bulletPoints: ["Photography With Mike is a photography business that I started in 2020. I specialize in portrait photography, but I also do event photography and wedding photography. I am currently based in Boston, MA, but I am willing to travel to Pittsburgh, PA for events. I am also willing to travel to other locations for events. I am currently looking for more clients to work with. Please contact me if you are interested in working with me.", "Lean more about me and my work at https://mikemundia.wordpress.com/"],
         }
     ]
+
+// Design Experience Data
+
+export const designExpData: DesignExpProps[] = [
+    {
+        name: "White Hall Hackathon",
+        figmaLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FlsPWERVLvwLG2jVD2jQj5e%2FWhite-Hall-Hackathon%3Fnode-id%3D0%253A1%26t%3D1SCO92NHu602XGBi-1?nojump"
+    },
+    {
+        name: "Portfolio Website",
+        figmaLink:"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FWzqneCdgX7GCttGmaDStJP%2FPortfolio%3Fnode-id%3D0%253A1%26t%3Di5H4HpTvskpbXTfU-1?nojump"
+    },
+    {
+        name: "Thrift App",
+        figmaLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwxJ8V78BdS8iuARdK62zFx%2FThrift-it-App-Design%3Ft%3DP5WA0yhDnl6mubbT-1?nojump"
+    },
+    {
+        name: "Portfolio Website V2",
+        figmaLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqFPwH9eyarbYH6XSWflTKb%2FPortfolio-Landing-Page%3Ft%3DP5WA0yhDnl6mubbT-1?nojump",
+    },
+    {
+        name: "Portfolio Website V1",
+        figmaLink:"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fi4aAynQHKwElJv0sSIsNqV%2FPortfolio-Landing-Page-2%3Ft%3DP5WA0yhDnl6mubbT-1?nojump"
+    },
+    {
+        name: "Thrifting Bulletin",
+        figmaLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FF9JEhOOYoNwv3IFyGRCTHH%2FThrifting-Bulletin%3Fnode-id%3D0%253A1%26t%3DxTeZF3dg4hwIyxwt-1"
+    }
+]
 
 // Footer Navagation button data
 export const footerNavData: FooterButtonProps[] = [

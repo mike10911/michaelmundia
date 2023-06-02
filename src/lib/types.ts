@@ -71,3 +71,8 @@ export interface SkillTabProps {
 export interface StyledTabNameProps {
     active: boolean;
 }
+
+export interface DesignExpProps {
+    name: string;
+    figmaLink: string;
+}
