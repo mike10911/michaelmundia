@@ -4,10 +4,9 @@ import { H1 } from "../../lib/typography";
 
 export const FooterContainer = styled.footer`
   background-color: ${colors.LIGHT_GREEN};
-  width: 100%;
   border-radius: 100px 100px 0 0;
   height: 22em;
-  margin-top: 30em;
+  margin-top: 20em;
   text-align: center;
 `;
 export const StyledMFooter = styled(H1)`

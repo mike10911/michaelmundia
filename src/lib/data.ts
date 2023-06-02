@@ -209,28 +209,28 @@ export const designExpData: DesignExpProps[] = [
 export const footerNavData: FooterButtonProps[] = [
     {
         btnText: "ABOUT",
-        btnLink: "/#about",
+        btnLink: "about",
     },
     {
         btnText: "SKILLS",
-        btnLink: "/#skills",
+        btnLink: "skills",
     },
     {
         btnText: "EXPERIENCE",
-        btnLink: "/#exp",
+        btnLink: "exp",
+    },
+    {
+        btnText: "DESIGN",
+        btnLink: "design",
     },
     {
         btnText: "PROJECTS",
         btnLink: "#",
-    },
-    {
-        btnText: "PHOTO",
-        btnLink: "https://mikemundia.wordpress.com/",
         newTab: true,
     },
     {
-        btnText: "RESUME",
-        btnLink: resume,
+        btnText: "THEATRE",
+        btnLink: "#",
         newTab: true,
     },
 ]

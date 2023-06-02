@@ -9,13 +9,14 @@ import {
   FooterContainer,
   StyledMFooter,
 } from "./Footer.styles";
+import {Link} from "react-scroll";
 
 export const about = document.querySelector('#exp');
 
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      <StyledLink href="#">
+      <StyledLink href="/">
         <StyledMFooter
           whileHover="hover"
           whileTap="tap"
@@ -26,6 +27,7 @@ const Footer: React.FC = () => {
       </StyledLink>
       <ButtonContainer>
         {footerNavData.map((item) => (
+          <Link to={item.btnLink} smooth={true} duration={1000} offset={-70}>
           <PrimaryButton
             btnText={item.btnText}
             btnLink={item.btnLink}
@@ -33,6 +35,7 @@ const Footer: React.FC = () => {
             secondaryColor={colors.PARCHMENT}
             newTab={item.newTab}
           />
+          </Link>
         ))}
       </ButtonContainer>
       <H3>
