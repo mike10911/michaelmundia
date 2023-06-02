@@ -11,7 +11,7 @@ import {
   StyledNameTitleContainer,
   StyledTitle,
 } from "./LandingPage.styles";
-import resume from "../../docs/MMResume2.pdf";
+import resume from "../../docs/MMResume.pdf";
 
 
 const variantsTop = {
