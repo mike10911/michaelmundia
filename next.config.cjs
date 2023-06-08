@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const nextConfig = {}
+
+module.exports = nextConfig
+
+const withImages = Image
+module.exports = withImages({
+  inlineImageLimit: false
+})
+
+module.exports = {
   webpack(config, options) {
     config.module.rules.push({
       test: /\.(ogg|mp3|wav|mpe?g)$/i,
@@ -14,10 +24,4 @@ const nextConfig = {
     });
     return config;
   },
-}
-
-module.exports = nextConfig
-
-
-
-
+};
