@@ -16,7 +16,7 @@ export interface StyledPrimaryButtonProps {
 // FOOTER
 export interface FooterButtonProps {
     btnText: string;
-    btnLink?: string;
+    btnLink: string;
     newTab?: boolean;
     primaryColor?: string;
     secondaryColor?: string;
