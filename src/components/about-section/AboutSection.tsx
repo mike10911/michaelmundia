@@ -49,7 +49,7 @@ const AboutSection: React.FC = () => {
           </StyledAboutText>
         </StyledNameTextContainer>
         <StyledImageSocialsContainer>
-          <StyledAboutImage src={profile}></StyledAboutImage>
+          <StyledAboutImage alt="mike" src={profile}/>
           <StyledSocialsContainer>
             <StyledAboutSocialIcon
               variants={buttonAnimations}

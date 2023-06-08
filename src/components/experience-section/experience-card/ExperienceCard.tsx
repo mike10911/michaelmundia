@@ -50,7 +50,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
       transition={{ duration: 0.7 }}
     >
         <ExperienceCardContainer backgroundColor={props.backgroundColor}>
-          <StyledExperienceCardImage src={props.image} />
+          <StyledExperienceCardImage alt="exp" src={props.image} />
           <StyledExperienceCardTitle color={props.textColor}>
             {props.jobTitle}
           </StyledExperienceCardTitle>

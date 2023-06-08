@@ -27,7 +27,7 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
     return domReady ? ReactDOM.createPortal(
       <ExperienceCardModalConatiner ref={ref}>
         <ModalUpperSection>
-          <ModalImage src = {image} ></ModalImage>
+          <ModalImage alt="modal image" src = {image} ></ModalImage>
           <TitleCompanyDiv>
             <ModalTitle>{titleCase(jobTitle)}</ModalTitle>
             <ModalCompany>{company}</ModalCompany>

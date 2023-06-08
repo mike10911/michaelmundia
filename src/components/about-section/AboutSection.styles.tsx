@@ -77,8 +77,6 @@ const StyledAboutImage = styled(Image)`
     scale: 0.8;
     margin-top: -2em;
     margin-right: 1em;
-    
-
 `;
 const StyledSocialsContainer = styled.div`
    
