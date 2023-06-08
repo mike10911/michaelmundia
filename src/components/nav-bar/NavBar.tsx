@@ -50,18 +50,18 @@ const NavBar: React.FC = () => {
     </React.Fragment>
   );
 
-  const startupAudio = new Audio(startup);
-  const mainMenuAudio = new Audio(main);
-  const playAudio = () => {
-    startupAudio.play();
-    mainMenuAudio.loop = true;
-    mainMenuAudio.play();
-  };
+  // const startupAudio = new Audio(startup);
+  // const mainMenuAudio = new Audio(main);
+  // const playAudio = () => {
+  //   startupAudio.play();
+  //   mainMenuAudio.loop = true;
+  //   mainMenuAudio.play();
+  // };
 
-  const clickAudio = new Audio(click);
-  const playAudioClick = () => {
-    clickAudio.play();
-  };
+  // const clickAudio = new Audio(click);
+  // const playAudioClick = () => {
+  //   clickAudio.play();
+  // };
   const [navBarVisible, setNavBarVisible] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
@@ -97,7 +97,8 @@ const NavBar: React.FC = () => {
       transition={{ duration: 0.3 }}
     >
       <StyledNavBarContainer animate="animate">
-        <StyledNavBarList onClick={playAudioClick}>
+      {/* onClick={playAudioClick} */}
+        <StyledNavBarList>
           <Link to="about" smooth={true} duration={500} offset={-70}>
             <StyledNavBarItem>
               <StyledNavLink href="/#about">ABOUT</StyledNavLink>
@@ -119,7 +120,8 @@ const NavBar: React.FC = () => {
             </StyledNavBarItem>
           </Link>
           <li>
-            <StyledNavLink  href="#" onClick={playAudio}>
+          {/* onClick={playAudio} */}
+            <StyledNavLink  href="#">
               <H1
                 onClick={scrollToTop}
                 whileHover="hover"

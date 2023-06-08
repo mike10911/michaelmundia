@@ -6,13 +6,13 @@ import { StyledPrimaryButton } from "./PrimaryButton.styles";
 import click from "./click.mp3";
 
 const PrimaryButton: React.FC<PrimaryButtonProps> = (props) => {
-  const clickAudio = new Audio(click);
-  const playAudio = () => {
-    clickAudio.play();
-  };
+  // const clickAudio = new Audio(click);
+  // const playAudio = () => {
+  //   clickAudio.play();
+  // };
   return (
     <a
-      onClick={playAudio}
+      // onClick={playAudio}
       href={props.btnLink}
       target={props.newTab ? "_blank" : "_self"}
     >
