@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
+import Image from 'next/image'
 const nextConfig = {}
 
 module.exports = nextConfig
 
-const withImages = require('next/images')
+const withImages = Image
 module.exports = withImages({
   inlineImageLimit: false
 })
