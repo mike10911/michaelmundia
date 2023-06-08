@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { colors } from "../../../lib/colors";
 import { H2, H3 } from "../../../lib/typography";
+import Image from "next/image";
 
 export const ExperienceCardModalOverlay = styled(motion.div)`
   top: 0;
@@ -40,7 +41,7 @@ export const ModalUpperSection = styled.div`
   display: flex;
 `;
 
-export const ModalImage = styled.img``;
+export const ModalImage = styled(Image)``;
 export const TitleCompanyDiv = styled.div`
   padding-top: 0.5em;
   padding-left: 1em;

@@ -12,7 +12,6 @@ import ulModalLogo from "../images/ulModalLogo.svg";
 import wmModalLogo from "../images/wmModalLogo.svg";
 import light from "../images/light 1.png";
 import { colors } from "./colors";
-import resume from "../docs/MMResume2.pdf";
 import html from "../images/html.svg";
 import css from "../images/css.svg";
 import js from "../images/js.svg";

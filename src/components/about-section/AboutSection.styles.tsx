@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { colors } from "../../lib/colors";
 import { H1, H2, H3, P } from "../../lib/typography";
+import Image from "next/image";
 
 const StyledAboutSectionContainer = styled.div`
   background-color: ${colors.LIGHT_GREEN};
@@ -72,7 +73,7 @@ const StyledAboutText = styled(H3)`
 
 const StyledImageSocialsContainer = styled.div``;
 
-const StyledAboutImage = styled.img`
+const StyledAboutImage = styled(Image)`
     scale: 0.8;
     margin-top: -2em;
     margin-right: 1em;

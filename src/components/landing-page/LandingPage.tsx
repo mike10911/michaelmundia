@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { H1, H2 } from "../../lib/typography";
@@ -11,7 +12,7 @@ import {
   StyledNameTitleContainer,
   StyledTitle,
 } from "./LandingPage.styles";
-import resume from "../../docs/MMResume.pdf";
+//import resume from "../../docs/MMResume.pdf";
 
 const variantsTop = {
   enter: { y: "-100%", opacity: 0 },
@@ -102,7 +103,7 @@ const LandingPage: React.FC = () => {
         <PrimaryButton
           btnText={"RESUME"}
           newTab
-          btnLink={resume}
+          btnLink={"https://drive.google.com/file/d/1Ja7V7arJvg6Jm_nkH0os4MBxl1bHnC7u/view?usp=drive_link"}
         ></PrimaryButton>
       </StyledCallToActionBtnContainer>
     </StyledLandingContainer>

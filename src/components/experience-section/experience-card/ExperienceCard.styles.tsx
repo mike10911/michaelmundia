@@ -3,6 +3,7 @@ import { colors } from "../../../lib/colors";
 import { ExperienceCardContainerProps } from "../../../lib/types";
 import { H2 } from "../../../lib/typography";
 import PrimaryButton from "../../primary-button/PrimaryButton";
+import Image from "next/image";
 
 
 export const ExperienceCardContainer = styled.div<ExperienceCardContainerProps>`
@@ -18,15 +19,10 @@ export const ExperienceCardContainer = styled.div<ExperienceCardContainerProps>`
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);  
     color: ${(props) => props.color ? props.color : colors.WHITE}; 
     margin: 0 auto;
-   
-
-    
 `
-export const StyledExperienceCardImage = styled.img`
+export const StyledExperienceCardImage = styled(Image)`
    scale: 0.7;
    max-width:100%;
-   
-   
 `
 
 export const StyledExperienceCardTitle = styled(H2)`

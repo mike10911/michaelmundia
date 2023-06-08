@@ -4,6 +4,7 @@ import { colors } from '../../lib/colors'
 import { H1, H2 } from '../../lib/typography'
 import { motion } from 'framer-motion'
 import { StyledTabNameProps } from '../../lib/types'
+import Image from 'next/image'
 
 
 const SkillsSectionContainer = styled.section`
@@ -51,7 +52,7 @@ const StyledTabTitleContainer = styled.div`
     justify-content: space-around;
 `
 
-const SkillImage = styled(motion.img)`
+const SkillImage = styled(Image)`
     height: 9em;
     width: 9em;
     padding: 5em;

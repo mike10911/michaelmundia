@@ -17,7 +17,13 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
       return title.split(' ').map(item => 
              item.charAt(0).toUpperCase() + item.slice(1).toLowerCase()).join(' ');
     }
-    return ReactDOM.createPortal(
+    const [domReady, setDomReady] = React.useState(false)
+    
+    React.useEffect(() => {
+      setDomReady(true)
+    })
+
+    return domReady ? ReactDOM.createPortal(
       <ExperienceCardModalConatiner ref={ref}>
         <ModalUpperSection>
           <ModalImage src = {image} ></ModalImage>
@@ -41,7 +47,7 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
       </ExperienceCardModalConatiner>
     ,
     document.getElementById("modal-root") as Element
-    );
+    ) : null;
   }
 );
 

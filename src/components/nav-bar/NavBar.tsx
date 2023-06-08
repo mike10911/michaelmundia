@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { colors } from "../../lib/colors";
 import { H1, StyledLink } from "../../lib/typography";
