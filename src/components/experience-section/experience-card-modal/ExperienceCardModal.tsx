@@ -38,7 +38,7 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
           </DateLocationDiv>
         </ModalUpperSection>
         <BulletPoints>
-          {bulletPoints.map((bulletPoint, key) => (
+          {bulletPoints.map((bulletPoint) => (
             <li key={1}><P>{bulletPoint}</P></li>
           ))}
         </BulletPoints>

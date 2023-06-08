@@ -32,7 +32,7 @@ const SkillsSection: React.FC = () => {
       <StyledTabContainer>
         <StyledTabTitleContainer>
           {skillTabs.map((tab, index) => (
-            <StyledTabName active={activeTab === index}  onClick={(): void => setActiveTab(index)}>{tab.title}</StyledTabName>
+            <StyledTabName key={1} active={activeTab === index}  onClick={(): void => setActiveTab(index)}>{tab.title}</StyledTabName>
           ))}
         </StyledTabTitleContainer>
       </StyledTabContainer>
@@ -45,7 +45,7 @@ const SkillsSection: React.FC = () => {
           transition={{ duration: 1 }}
         >
           {skillTabs[activeTab].content.slice(0, 4).map((img) => (
-            <SkillImage alt="img" src={img} />
+            <SkillImage key={1} alt="img" src={img} />
           ))}
         </SkillImageWrapper>
 
@@ -56,7 +56,7 @@ const SkillsSection: React.FC = () => {
           transition={{ duration: 1 }}
         >
           {skillTabs[activeTab].content.slice(4).map((img) => (
-            <SkillImage alt="d" src={img} />
+            <SkillImage key={1} alt="d" src={img} />
           ))}
         </SkillImageWrapper>
         </AnimatePresence>

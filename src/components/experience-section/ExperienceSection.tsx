@@ -37,6 +37,7 @@ const ExperienceSection: React.FC = () => {
           {experienceCardData.map((card) => {
             return (
               <ExperienceCard
+                key={card.id}
                 image={card.image}
                 modalLogo={card.modalLogo}
                 jobTitle={card.jobTitle}
@@ -57,7 +58,7 @@ const ExperienceSection: React.FC = () => {
           DESIGN EXPERIENCE
         </StyledDesignExperienceSectionTitle>
         {designExpData.map((card) => {
-          return <FigmaEmbed name={card.name} figmaLink={card.figmaLink} />;
+          return <FigmaEmbed key={1} name={card.name} figmaLink={card.figmaLink} />;
         })}
       </FigmaContainer>
     </>

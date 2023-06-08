@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
       </StyledLink>
       <ButtonContainer>
         {footerNavData.map((item) => (
-          <Link to={item.btnLink} smooth={true} duration={1000} offset={-70}>
+          <Link key={1} to={item.btnLink} smooth={true} duration={1000} offset={-70}>
           <PrimaryButton
             btnText={item.btnText}
             btnLink={item.btnLink}
