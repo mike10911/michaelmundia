@@ -5,6 +5,7 @@ import { P } from "../../../lib/typography";
 import PrimaryButton from "../../primary-button/PrimaryButton";
 import { BulletPoints, DateLocationDiv, ExperienceCardModalConatiner, ModalBackButtonDiv, ModalCompany, ModalDate, ModalImage, ModalLocation, ModalTitle, ModalUpperSection, TitleCompanyDiv } from "./ExperienceCardModal.styles";
 
+// eslint-disable-next-line react/display-name
 const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
   (
     { handleClicked, jobTitle, image, company, date, location, bulletPoints },
@@ -21,7 +22,7 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
     
     React.useEffect(() => {
       setDomReady(true)
-    })
+    }, [])
 
     return domReady ? ReactDOM.createPortal(
       <ExperienceCardModalConatiner ref={ref}>
@@ -37,8 +38,8 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
           </DateLocationDiv>
         </ModalUpperSection>
         <BulletPoints>
-          {bulletPoints.map((bulletPoint) => (
-            <li><P>{bulletPoint}</P></li>
+          {bulletPoints.map((bulletPoint, key) => (
+            <li key={1}><P>{bulletPoint}</P></li>
           ))}
         </BulletPoints>
         <ModalBackButtonDiv>
