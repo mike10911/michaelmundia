@@ -4,10 +4,10 @@ const nextConfig = {}
 
 module.exports = nextConfig
 
-// const withImages = Image
-// module.exports = withImages({
-//   inlineImageLimit: false
-// })
+const withImages = Image
+module.exports = withImages({
+  inlineImageLimit: false
+})
 
 module.exports = {
   webpack(config, options) {
@@ -15,7 +15,7 @@ module.exports = {
       test: /\.(ogg|mp3|wav|mpe?g)$/i,
       use: [
         {
-          loader: 'file-loader',
+          loader: 'file',
           options: {
             name: '[name]-[hash].[ext]',
           },
