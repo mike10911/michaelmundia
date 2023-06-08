@@ -20,6 +20,7 @@ import profile from "../../images/profile.png";
 import { BsLinkedin, BsGithub, BsFillCameraFill } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 import { buttonAnimations } from "../nav-bar/NavBar.animations";
+import Image from "next/image";
 
 const AboutSection: React.FC = () => {
   return (
@@ -49,7 +50,9 @@ const AboutSection: React.FC = () => {
           </StyledAboutText>
         </StyledNameTextContainer>
         <StyledImageSocialsContainer>
-          <StyledAboutImage alt="mike" src={profile}/>
+          <StyledAboutImage>
+            <Image alt="mike" src={profile}/>
+          </StyledAboutImage>
           <StyledSocialsContainer>
             <StyledAboutSocialIcon
               variants={buttonAnimations}
@@ -60,7 +63,7 @@ const AboutSection: React.FC = () => {
             >
               <BsLinkedin size="3rem" />
             </StyledAboutSocialIcon>
-
+              
             <StyledAboutSocialIcon
               variants={buttonAnimations}
               whileHover="hover"
