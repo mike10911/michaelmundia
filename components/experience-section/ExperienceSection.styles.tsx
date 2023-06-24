@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import styled, { AnyStyledComponent } from "styled-components";
 import { H1 } from "../../lib/typography";
+import { ComponentType } from "react";
 
 const ExperienceSectionContainer = styled.div`
   margin-top: 15em;
@@ -21,7 +22,7 @@ const StyledExperienceSectionTitle = styled(H1)`
   letter-spacing: 0.2rem;
   padding-bottom: 2em;
 `;
-const FigmaContainer : AnyStyledComponent = styled(motion.div)`
+const FigmaContainer : ComponentType = styled(motion.div)`
   margin-top: 15em;
   text-align: center;
 
