@@ -41,7 +41,6 @@ export const ModalUpperSection = styled.div`
   display: flex;
 `;
 
-export const ModalImage = styled(Image)``;
 export const TitleCompanyDiv = styled.div`
   padding-top: 0.5em;
   padding-left: 1em;

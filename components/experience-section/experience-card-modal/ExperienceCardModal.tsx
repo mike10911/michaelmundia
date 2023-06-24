@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { ExperienceCardModalProps } from "../../../lib/types";
 import { P } from "../../../lib/typography";
 import PrimaryButton from "../../primary-button/PrimaryButton";
-import { BulletPoints, DateLocationDiv, ExperienceCardModalConatiner, ModalBackButtonDiv, ModalCompany, ModalDate, ModalImage, ModalLocation, ModalTitle, ModalUpperSection, TitleCompanyDiv } from "./ExperienceCardModal.styles";
+import { BulletPoints, DateLocationDiv, ExperienceCardModalConatiner, ModalBackButtonDiv, ModalCompany, ModalDate, ModalLocation, ModalTitle, ModalUpperSection, TitleCompanyDiv } from "./ExperienceCardModal.styles";
 import Image from "next/image";
 
 // eslint-disable-next-line react/display-name
