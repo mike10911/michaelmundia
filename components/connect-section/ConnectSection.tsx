@@ -19,36 +19,36 @@ const ConnectSection: React.FC = () => {
       <ConnectSectionTitle color={colors.DARK_GREEN}>LET'S CONNECT!</ConnectSectionTitle>
       <ConnectBoxContainer>
         <SocialIcon
-          variants={buttonAnimations}
-          whileHover="hover"
-          whileTap="tap"
+          // variants={buttonAnimations}
+          // whileHover="hover"
+          // whileTap="tap"
           href="https://www.linkedin.com/in/michael-mundia/"
           target="_blank"
         >
           <BsLinkedin size="5rem" />
         </SocialIcon>
         <SocialIcon
-          variants={buttonAnimations}
-          whileHover="hover"
-          whileTap="tap"
+          // variants={buttonAnimations}
+          // whileHover="hover"
+          // whileTap="tap"
           href="https://github.com/mike10911"
           target="_blank"
         >
           <BsGithub size="5rem" />
         </SocialIcon>
         <SocialIcon
-          variants={buttonAnimations}
-          whileHover="hover"
-          whileTap="tap"
+          // variants={buttonAnimations}
+          // whileHover="hover"
+          // whileTap="tap"
           href="mailto:mikeymundia@gmail.com"
           target="_blank"
         >
           <MdMail size="5rem" />
         </SocialIcon>
         <SocialIcon
-          variants={buttonAnimations}
-          whileHover="hover"
-          whileTap="tap"
+          // variants={buttonAnimations}
+          // whileHover="hover"
+          // whileTap="tap"
           href="https://mikemundia.wordpress.com/"
           target="_blank"
         >
