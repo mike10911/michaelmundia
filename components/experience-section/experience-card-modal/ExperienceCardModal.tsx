@@ -4,6 +4,7 @@ import { ExperienceCardModalProps } from "../../../lib/types";
 import { P } from "../../../lib/typography";
 import PrimaryButton from "../../primary-button/PrimaryButton";
 import { BulletPoints, DateLocationDiv, ExperienceCardModalConatiner, ModalBackButtonDiv, ModalCompany, ModalDate, ModalImage, ModalLocation, ModalTitle, ModalUpperSection, TitleCompanyDiv } from "./ExperienceCardModal.styles";
+import Image from "next/image";
 
 // eslint-disable-next-line react/display-name
 const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
@@ -27,7 +28,7 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
     return domReady ? ReactDOM.createPortal(
       <ExperienceCardModalConatiner ref={ref}>
         <ModalUpperSection>
-          <ModalImage alt="modal image" src = {image} ></ModalImage>
+          <Image alt="modal image" src = {image} ></Image>
           <TitleCompanyDiv>
             <ModalTitle>{titleCase(jobTitle)}</ModalTitle>
             <ModalCompany>{company}</ModalCompany>
