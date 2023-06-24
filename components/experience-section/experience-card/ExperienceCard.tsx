@@ -16,6 +16,7 @@ import {
 
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
   const [modalOpen, setModalOpen] = React.useState(false);
@@ -49,44 +50,47 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
       variants={cardVariants}
       transition={{ duration: 0.7 }}
     >
-        <ExperienceCardContainer backgroundColor={props.backgroundColor}>
-          <StyledExperienceCardImage alt="exp" src={props.image} />
-          <StyledExperienceCardTitle color={props.textColor}>
-            {props.jobTitle}
-          </StyledExperienceCardTitle>
-          <PrimaryButton
-            onClick={() => setModalOpen(true)}
-            primaryColor={props.textColor}
-            secondaryColor={props.backgroundColor}
-            btnText="MORE"
-          />
-        </ExperienceCardContainer>
-        <AnimatePresence>
-          {modalOpen && (
-            <>
-              <ExperienceCardModalOverlay
-                // variants={backdropVariant}
-                // initial="hidden"
-                // animate="visible"
-                // exit="exit"
-              />
-              <ExperienceCardModalMotion
-                handleClicked={handleChildClick}
-                image={props.modalLogo}
-                jobTitle={props.jobTitle}
-                company={props.company}
-                date={props.date}
-                location={props.location}
-                bulletPoints={props.bulletPoints}
-                key={props.id}
-                variants={modalVariant}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-              />
-            </>
-          )}
-        </AnimatePresence>
+      <ExperienceCardContainer backgroundColor={props.backgroundColor}>
+        <StyledExperienceCardImage>
+          <Image alt="exp" src={props.image} />
+        </StyledExperienceCardImage>
+
+        <StyledExperienceCardTitle color={props.textColor}>
+          {props.jobTitle}
+        </StyledExperienceCardTitle>
+        <PrimaryButton
+          onClick={() => setModalOpen(true)}
+          primaryColor={props.textColor}
+          secondaryColor={props.backgroundColor}
+          btnText="MORE"
+        />
+      </ExperienceCardContainer>
+      <AnimatePresence>
+        {modalOpen && (
+          <>
+            <ExperienceCardModalOverlay
+            // variants={backdropVariant}
+            // initial="hidden"
+            // animate="visible"
+            // exit="exit"
+            />
+            <ExperienceCardModalMotion
+              handleClicked={handleChildClick}
+              image={props.modalLogo}
+              jobTitle={props.jobTitle}
+              company={props.company}
+              date={props.date}
+              location={props.location}
+              bulletPoints={props.bulletPoints}
+              key={props.id}
+              variants={modalVariant}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            />
+          </>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

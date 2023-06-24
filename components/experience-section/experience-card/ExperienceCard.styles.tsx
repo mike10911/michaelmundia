@@ -20,7 +20,7 @@ export const ExperienceCardContainer = styled.div<ExperienceCardContainerProps>`
     color: ${(props) => props.color ? props.color : colors.WHITE}; 
     margin: 0 auto;
 `
-export const StyledExperienceCardImage = styled(Image)`
+export const StyledExperienceCardImage = styled.div`
    scale: 0.7;
    max-width:100%;
 `
