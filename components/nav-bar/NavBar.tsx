@@ -6,7 +6,6 @@ import { buttonAnimations } from "./NavBar.animations";
 import {
   StyledNavBarContainer,
   StyledNavBarItem,
-  StyledNavBarItem2,
   StyledNavBarList,
   StyledNavLink,
 } from "./NavBar.styles";
@@ -96,7 +95,9 @@ const NavBar: React.FC = () => {
       animate={{ y: navBarVisible ? 0 : -100, opacity: navBarVisible ? 1 : 0 }}
       transition={{ duration: 0.3 }}
     >
-      <StyledNavBarContainer animate="animate">
+      <StyledNavBarContainer 
+      // animate="animate"
+      >
       {/* onClick={playAudioClick} */}
         <StyledNavBarList>
           <Link to="about" smooth={true} duration={500} offset={-70}>

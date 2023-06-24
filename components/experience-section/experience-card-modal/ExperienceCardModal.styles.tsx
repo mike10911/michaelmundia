@@ -4,7 +4,7 @@ import { colors } from "../../../lib/colors";
 import { H2, H3 } from "../../../lib/typography";
 import Image from "next/image";
 
-export const ExperienceCardModalOverlay = styled(motion.div)`
+export const ExperienceCardModalOverlay = styled.div`
   top: 0;
   left: 0;
   right: 0;
@@ -14,7 +14,7 @@ export const ExperienceCardModalOverlay = styled(motion.div)`
   zindex: 1000;
 `;
 
-export const ExperienceCardModalConatiner = styled(motion.div)`
+export const ExperienceCardModalConatiner = styled.div`
   background-color: ${colors.WHITE};
   width: 60em;
   height: 30em;

@@ -39,10 +39,10 @@ const SkillsSection: React.FC = () => {
       <StyledContentContainer>
         <AnimatePresence>
         <SkillImageWrapper
-          animate={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 50 }}
-          exit={{ opacity: 0, y: -50 }}
-          transition={{ duration: 1 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // initial={{ opacity: 0, y: 50 }}
+          // exit={{ opacity: 0, y: -50 }}
+          // transition={{ duration: 1 }}
         >
           {skillTabs[activeTab].content.slice(0, 4).map((img) => (
             <SkillImage key={1} alt="img" src={img} />
@@ -50,10 +50,10 @@ const SkillsSection: React.FC = () => {
         </SkillImageWrapper>
 
         <SkillImageWrapper
-          animate={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 50 }}
-          exit={{ opacity: 0, y: -50 }}
-          transition={{ duration: 1 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // initial={{ opacity: 0, y: 50 }}
+          // exit={{ opacity: 0, y: -50 }}
+          // transition={{ duration: 1 }}
         >
           {skillTabs[activeTab].content.slice(4).map((img) => (
             <SkillImage key={1} alt="d" src={img} />

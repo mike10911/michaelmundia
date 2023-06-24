@@ -32,8 +32,8 @@ const AboutSection: React.FC = () => {
           <StyledName color="white">HELLO, I'M MIKE</StyledName>
           <StyledAboutText color="white">
             I am a highly motivated individual pursuing a combined major in
-            computer science and theatre, with a unique blend of technical
-            and creative skills that make me a valuable asset in any team or
+            computer science and theatre, with a unique blend of technical and
+            creative skills that make me a valuable asset in any team or
             project. With a solid foundation in computer programming and web
             development, coupled with a deep appreciation for the arts, I bring
             a well-rounded perspective to everything I do. Currently, I am
@@ -52,7 +52,7 @@ const AboutSection: React.FC = () => {
         </StyledNameTextContainer>
         <StyledImageSocialsContainer>
           <StyledAboutImage>
-            <Image alt="mike" src={profile}/>
+            <Image alt="mike" src={profile} />
           </StyledAboutImage>
           <StyledSocialsContainer>
             <motion.div
@@ -60,46 +60,12 @@ const AboutSection: React.FC = () => {
               whileHover="hover"
               whileTap="tap"
             >
-            <StyledAboutSocialIcon
-              href="https://www.linkedin.com/in/michael-mundia/"
-              target="_blank"
-            >
-              <BsLinkedin size="3rem" />
-            </StyledAboutSocialIcon>
-            </motion.div>
-  
-              
-            <StyledAboutSocialIcon
-              href="mailto:mikeymundia@gmail.com"
-              target="_blank"
-            >
-              <MdMail size="3rem" />
-            </StyledAboutSocialIcon>
-
-            <motion.div
-              variants={buttonAnimations}
-              whileHover="hover"
-              whileTap="tap"
-            >
               <StyledAboutSocialIcon
-              href="mailto:mikeymundia@gmail.com"
-              target="_blank"
-            >
-              <MdMail size="3rem" />
-            </StyledAboutSocialIcon>
-            </motion.div>
-
-            <motion.div
-              variants={buttonAnimations}
-              whileHover="hover"
-              whileTap="tap"
-            >
-              <StyledAboutSocialIcon
-              href="https://github.com/mike10911"
-              target="_blank"
-            >
-              <BsGithub size="3rem" />
-            </StyledAboutSocialIcon>
+                href="https://www.linkedin.com/in/michael-mundia/"
+                target="_blank"
+              >
+                <BsLinkedin size="3rem" />
+              </StyledAboutSocialIcon>
             </motion.div>
             <motion.div
               variants={buttonAnimations}
@@ -107,14 +73,36 @@ const AboutSection: React.FC = () => {
               whileTap="tap"
             >
               <StyledAboutSocialIcon
-              href="https://mikemundia.wordpress.com/"
-              target="_blank"
-            >
-              <BsFillCameraFill size="3rem" />
-            </StyledAboutSocialIcon>
+                href="mailto:mikeymundia@gmail.com"
+                target="_blank"
+              >
+                <MdMail size="3rem" />
+              </StyledAboutSocialIcon>
             </motion.div>
-
-
+            <motion.div
+              variants={buttonAnimations}
+              whileHover="hover"
+              whileTap="tap"
+            >
+              <StyledAboutSocialIcon
+                href="https://github.com/mike10911"
+                target="_blank"
+              >
+                <BsGithub size="3rem" />
+              </StyledAboutSocialIcon>
+            </motion.div>
+            <motion.div
+              variants={buttonAnimations}
+              whileHover="hover"
+              whileTap="tap"
+            >
+              <StyledAboutSocialIcon
+                href="https://mikemundia.wordpress.com/"
+                target="_blank"
+              >
+                <BsFillCameraFill size="3rem" />
+              </StyledAboutSocialIcon>
+            </motion.div>
           </StyledSocialsContainer>
         </StyledImageSocialsContainer>
       </AboutSectionContent>

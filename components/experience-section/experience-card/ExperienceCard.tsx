@@ -65,10 +65,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
           {modalOpen && (
             <>
               <ExperienceCardModalOverlay
-                variants={backdropVariant}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
+                // variants={backdropVariant}
+                // initial="hidden"
+                // animate="visible"
+                // exit="exit"
               />
               <ExperienceCardModalMotion
                 handleClicked={handleChildClick}

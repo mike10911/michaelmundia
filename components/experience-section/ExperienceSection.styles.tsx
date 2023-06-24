@@ -1,7 +1,6 @@
-import { HTMLMotionProps, motion } from "framer-motion";
-import styled, { AnyStyledComponent } from "styled-components";
+import { motion } from "framer-motion";
+import styled from "styled-components";
 import { H1 } from "../../lib/typography";
-import { ComponentType, forwardRef } from "react";
 
 const ExperienceSectionContainer = styled.div`
   margin-top: 15em;
@@ -22,11 +21,9 @@ const StyledExperienceSectionTitle = styled(H1)`
   letter-spacing: 0.2rem;
   padding-bottom: 2em;
 `;
-
-const FigmaContainer = styled(motion.div)<HTMLMotionProps<'div'>>`
+const FigmaContainer = styled.div`
   margin-top: 15em;
   text-align: center;
-
   padding-top: 2em;
   padding-left: 3em;
   padding-right: 3em;
@@ -36,7 +33,7 @@ const StyledDesignExperienceSectionTitle = styled(H1)`
   padding-bottom: 2em;
 `;
 
-export const StyledFigmaEmbed = styled(motion.iframe)<HTMLMotionProps<'div'>>`
+export const StyledFigmaEmbed = styled.iframe`
   margin: 2em;
   width: 45em;
   height: 30em;

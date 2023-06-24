@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { StyledLink } from '../../lib/typography';
 
 
-const StyledNavBarContainer = styled(motion.div)`
+const StyledNavBarContainer = styled.div`
     display: flex;
     justify-content: center;
     padding: rem;
@@ -26,7 +26,7 @@ const StyledNavBarItem = styled.li`
     padding-top: 1.4rem;
     transition: 0.1s;
 `
-const StyledNavBarItem2 = styled(motion.li)`
+const StyledNavBarItem2 = styled.li`
     text-decoration: none;
     padding-top: 1.4rem;
     background-color: ${colors.ORANGE};

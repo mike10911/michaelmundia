@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { colors } from "../../lib/colors";
 import { StyledPrimaryButtonProps } from "../../lib/types";
 
-const StyledPrimaryButton = styled(motion.button)<StyledPrimaryButtonProps>`
+const StyledPrimaryButton = styled.button<StyledPrimaryButtonProps>`
   background-color: ${(props) =>
     props.secondaryColor ? props.secondaryColor : "transparent"};
   color: ${(props) =>

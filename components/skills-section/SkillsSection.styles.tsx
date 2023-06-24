@@ -57,7 +57,7 @@ const SkillImage = styled(Image)`
     width: 9em;
     padding: 5em;
 `
-const SkillImageWrapper = styled(motion.div)`
+const SkillImageWrapper = styled.div`
     display: flex;
     justify-content: space-between;
    `

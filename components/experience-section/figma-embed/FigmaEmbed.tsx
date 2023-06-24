@@ -28,7 +28,7 @@ export const FigmaEmbed: React.FC<DesignExpProps> = (props) => {
       transition={{ duration: 0.7 }}
     >
       <StyledFigmaEmbed
-        whileHover={{ scale: 1.1 }}
+        // whileHover={{ scale: 1.1 }}
         src={props.figmaLink}
         allowFullScreen
         loading="lazy"

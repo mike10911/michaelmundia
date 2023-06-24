@@ -17,9 +17,9 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = (props) => {
       target={props.newTab ? "_blank" : "_self"}
     >
       <StyledPrimaryButton
-        whileHover="hover"
-        whileTap="tap"
-        variants={buttonAnimations}
+        // whileHover="hover"
+        // whileTap="tap"
+        // variants={buttonAnimations}
         primaryColor={props.primaryColor}
         secondaryColor={props.secondaryColor}
         onClick={props.onClick}
