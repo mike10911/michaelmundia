@@ -21,6 +21,7 @@ import { BsLinkedin, BsGithub, BsFillCameraFill } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 import { buttonAnimations } from "../nav-bar/NavBar.animations";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const AboutSection: React.FC = () => {
   return (
@@ -54,44 +55,66 @@ const AboutSection: React.FC = () => {
             <Image alt="mike" src={profile}/>
           </StyledAboutImage>
           <StyledSocialsContainer>
-            <StyledAboutSocialIcon
+            <motion.div
               variants={buttonAnimations}
               whileHover="hover"
               whileTap="tap"
+            >
+            <StyledAboutSocialIcon
               href="https://www.linkedin.com/in/michael-mundia/"
               target="_blank"
             >
               <BsLinkedin size="3rem" />
             </StyledAboutSocialIcon>
+            </motion.div>
+  
               
             <StyledAboutSocialIcon
-              variants={buttonAnimations}
-              whileHover="hover"
-              whileTap="tap"
               href="mailto:mikeymundia@gmail.com"
               target="_blank"
             >
               <MdMail size="3rem" />
             </StyledAboutSocialIcon>
-            <StyledAboutSocialIcon
+
+            <motion.div
               variants={buttonAnimations}
               whileHover="hover"
               whileTap="tap"
+            >
+              <StyledAboutSocialIcon
+              href="mailto:mikeymundia@gmail.com"
+              target="_blank"
+            >
+              <MdMail size="3rem" />
+            </StyledAboutSocialIcon>
+            </motion.div>
+
+            <motion.div
+              variants={buttonAnimations}
+              whileHover="hover"
+              whileTap="tap"
+            >
+              <StyledAboutSocialIcon
               href="https://github.com/mike10911"
               target="_blank"
-              
             >
               <BsGithub size="3rem" />
             </StyledAboutSocialIcon>
-            <StyledAboutSocialIcon
+            </motion.div>
+            <motion.div
               variants={buttonAnimations}
               whileHover="hover"
               whileTap="tap"
+            >
+              <StyledAboutSocialIcon
               href="https://mikemundia.wordpress.com/"
               target="_blank"
             >
               <BsFillCameraFill size="3rem" />
             </StyledAboutSocialIcon>
+            </motion.div>
+
+
           </StyledSocialsContainer>
         </StyledImageSocialsContainer>
       </AboutSectionContent>
