@@ -52,7 +52,7 @@ const StyledTabTitleContainer = styled.div`
     justify-content: space-around;
 `
 
-const SkillImage = styled(Image)`
+const SkillImage = styled.div`
     height: 9em;
     width: 9em;
     padding: 5em;

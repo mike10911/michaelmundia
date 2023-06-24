@@ -16,6 +16,7 @@ import { skillTabs } from "../../lib/data";
 import { H2 } from "../../lib/typography";
 import { skillImageAnimation } from "./SkillsSectionAnimations";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 // import { useState } from 'react';
 
@@ -45,7 +46,9 @@ const SkillsSection: React.FC = () => {
           // transition={{ duration: 1 }}
         >
           {skillTabs[activeTab].content.slice(0, 4).map((img) => (
-            <SkillImage key={1} alt="img" src={img} />
+            <SkillImage key={1}>
+            <Image key={1} alt="d" src={img} />
+            </SkillImage>
           ))}
         </SkillImageWrapper>
 
@@ -56,7 +59,9 @@ const SkillsSection: React.FC = () => {
           // transition={{ duration: 1 }}
         >
           {skillTabs[activeTab].content.slice(4).map((img) => (
-            <SkillImage key={1} alt="d" src={img} />
+            <SkillImage key={1}>
+            <Image key={1} alt="d" src={img} />
+            </SkillImage>
           ))}
         </SkillImageWrapper>
         </AnimatePresence>
