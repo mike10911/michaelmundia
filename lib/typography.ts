@@ -6,7 +6,7 @@ const fonts = {
   questrial: 'Questrial, sans-serif',
 };
 
-const H1 = styled(motion.h1)`
+const H1 = styled.h1`
   font-family: ${fonts.questrial};
   font-weight: ligher;
   color: ${(props): string => (props.color ? props.color : colors.DARK_GREEN)};
@@ -39,7 +39,7 @@ const P = styled.p`
     color: ${(props): string => (props.color ? props.color : colors.DARK_GREEN)};
 `;
 
-const StyledLink = styled(motion.a)`
+const StyledLink = styled.a`
    {
     text-decoration: none;
     color: ${(props): string => (props.color ? props.color : colors.DARK_GREEN)};
