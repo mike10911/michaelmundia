@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
     <FooterContainer>
       <StyledLink href="/">
         <StyledMFooter
-          whileHover="hover"
-          whileTap="tap"
-          variants={buttonAnimations}
+          // whileHover="hover"
+          // whileTap="tap"
+          // variants={buttonAnimations}
         >
           M
         </StyledMFooter>

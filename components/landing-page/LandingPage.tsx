@@ -67,22 +67,22 @@ const LandingPage: React.FC = () => {
         <StyledNameContainer>
           <StyledName
             key="name"
-            initial="enter"
-            animate="center"
-            exit="exit"
-            variants={variantsTop}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
+            // initial="enter"
+            // animate="center"
+            // exit="exit"
+            // variants={variantsTop}
+            // transition={{ duration: 1.5, ease: "easeInOut" }}
           >
             MICHAEL
           </StyledName>
           <StyledM>M</StyledM>
           <StyledName
             key="name"
-            initial="enter"
-            animate="center"
-            exit="exit"
-            variants={variantsBottom}
-            transition={{ duration: 1.5, damping: 100, ease: "easeInOut" }}
+            // initial="enter"
+            // animate="center"
+            // exit="exit"
+            // variants={variantsBottom}
+            // transition={{ duration: 1.5, damping: 100, ease: "easeInOut" }}
           >
             MUNDIA
           </StyledName>

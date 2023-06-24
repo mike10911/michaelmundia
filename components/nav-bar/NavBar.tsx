@@ -125,9 +125,9 @@ const NavBar: React.FC = () => {
             <StyledNavLink  href="#">
               <H1
                 onClick={scrollToTop}
-                whileHover="hover"
-                whileTap="tap"
-                variants={buttonAnimations}
+                // whileHover="hover"
+                // whileTap="tap"
+                // variants={buttonAnimations}
               >
                 M
               </H1>
