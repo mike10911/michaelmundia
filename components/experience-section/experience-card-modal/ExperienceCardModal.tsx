@@ -1,3 +1,4 @@
+
 import React, { forwardRef, Ref } from "react";
 import ReactDOM from "react-dom";
 import { ExperienceCardModalProps } from "../../../lib/types";
@@ -5,6 +6,7 @@ import { P } from "../../../lib/typography";
 import PrimaryButton from "../../primary-button/PrimaryButton";
 import { BulletPoints, DateLocationDiv, ExperienceCardModalConatiner, ModalBackButtonDiv, ModalCompany, ModalDate, ModalLocation, ModalTitle, ModalUpperSection, TitleCompanyDiv } from "./ExperienceCardModal.styles";
 import Image from "next/image";
+
 
 // eslint-disable-next-line react/display-name
 const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
@@ -48,7 +50,7 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
         </ModalBackButtonDiv>
       </ExperienceCardModalConatiner>
     ,
-    document.getElementById("modal-root") as Element
+    document.body as Element
     ) : null;
   }
 );

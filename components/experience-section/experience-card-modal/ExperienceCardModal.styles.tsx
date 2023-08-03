@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import { colors } from "../../../lib/colors";
 import { H2, H3 } from "../../../lib/typography";
 import Image from "next/image";
