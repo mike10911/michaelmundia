@@ -7,7 +7,6 @@ import PrimaryButton from "../../primary-button/PrimaryButton";
 import { BulletPoints, DateLocationDiv, ExperienceCardModalConatiner, ModalBackButtonDiv, ModalCompany, ModalDate, ModalLocation, ModalTitle, ModalUpperSection, TitleCompanyDiv } from "./ExperienceCardModal.styles";
 import Image from "next/image";
 
-
 // eslint-disable-next-line react/display-name
 const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
   (
