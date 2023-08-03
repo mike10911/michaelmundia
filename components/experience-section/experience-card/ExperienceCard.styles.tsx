@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import { colors } from "../../../lib/colors";
 import { ExperienceCardContainerProps } from "../../../lib/types";
 import { H2 } from "../../../lib/typography";

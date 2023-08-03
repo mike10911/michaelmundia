@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import { H1 } from "../../lib/typography";
 
 const ExperienceSectionContainer = styled.div`

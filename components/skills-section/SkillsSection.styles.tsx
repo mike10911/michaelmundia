@@ -1,5 +1,5 @@
 
-import styled from 'styled-components'
+import styled from "@emotion/styled";
 import { colors } from '../../lib/colors'
 import { H1, H2 } from '../../lib/typography'
 import { motion } from 'framer-motion'
@@ -52,7 +52,7 @@ const StyledTabTitleContainer = styled.div`
     justify-content: space-around;
 `
 
-const SkillImage = styled.div`
+const SkillImage = styled(Image)`
     height: 9em;
     width: 9em;
     padding: 5em;

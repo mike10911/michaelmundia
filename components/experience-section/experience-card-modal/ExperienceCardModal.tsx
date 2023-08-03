@@ -1,3 +1,4 @@
+
 import React, { forwardRef, Ref } from "react";
 import ReactDOM from "react-dom";
 import { ExperienceCardModalProps } from "../../../lib/types";
@@ -48,7 +49,7 @@ const ExperienceCardModal: React.FC<ExperienceCardModalProps> = forwardRef(
         </ModalBackButtonDiv>
       </ExperienceCardModalConatiner>
     ,
-    document.getElementById("modal-root") as Element
+    document.body as Element
     ) : null;
   }
 );

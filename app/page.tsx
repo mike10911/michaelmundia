@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import './style.css';
-import React from "react";
+import React, { Suspense } from "react";
 import AboutSection from "../components/about-section/AboutSection";
 import ConnectSection from "../components/connect-section/ConnectSection";
 import ExperienceSection from "../components/experience-section/ExperienceSection";
